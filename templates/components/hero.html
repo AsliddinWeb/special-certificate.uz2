@@ -1,0 +1,159 @@
+{% load static %}
+
+<section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-dark via-primary to-dark">
+
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><pattern id=%22grid%22 width=%2210%22 height=%2210%22 patternUnits=%22userSpaceOnUse%22><path d=%22M 10 0 L 0 0 0 10%22 fill=%22none%22 stroke=%22white%22 stroke-width=%220.5%22/></pattern></defs><rect width=%22100%22 height=%22100%22 fill=%22url(%23grid)%22/></svg>'); background-size: 50px 50px;"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div class="text-center lg:text-left">
+
+                <!-- Badges - Bosiladigan -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-8" data-aos="fade-up">
+                    <a href="{% url 'core:certification_body' %}" class="group inline-flex items-center px-5 py-2.5 bg-white/10 hover:bg-secondary backdrop-blur-sm border border-white/20 hover:border-secondary rounded-full text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/25">
+                        <svg class="w-4 h-4 mr-2 text-accent group-hover:text-white group-hover:rotate-12 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                        <span>Sertifikatlashtirish organi</span>
+                        <svg class="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="{% url 'core:testing_laboratory' %}" class="group inline-flex items-center px-5 py-2.5 bg-white/10 hover:bg-green-600 backdrop-blur-sm border border-white/20 hover:border-green-600 rounded-full text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-600/25">
+                        <svg class="w-4 h-4 mr-2 text-accent group-hover:text-white group-hover:rotate-12 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                        <span>Sinov laboratoriyasi</span>
+                        <svg class="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                    Special
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary">Certificate</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    Qurilish materiallarini sertifikatlashtirish va sinov xizmatlari. Sifat kafolati bilan ishonchli hamkorlik.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="{% url 'core:contact' %}" class="inline-flex items-center justify-center px-8 py-4 bg-secondary hover:bg-accent text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-secondary/25">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        Bog'lanish
+                    </a>
+                    <a href="{% url 'services:list' %}" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-xl transition-all duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                        Xizmatlar
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center lg:text-left">
+                        <div class="text-3xl sm:text-4xl font-bold text-white">8+</div>
+                        <div class="text-gray-400 text-sm mt-1">Yillik tajriba</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-3xl sm:text-4xl font-bold text-white">500+</div>
+                        <div class="text-gray-400 text-sm mt-1">Mijozlar</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-3xl sm:text-4xl font-bold text-white">1000+</div>
+                        <div class="text-gray-400 text-sm mt-1">Sertifikatlar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content - Image Slider -->
+            <div class="relative hidden lg:block" data-aos="fade-left" data-aos-delay="200">
+                <div class="relative" x-data="{
+                    currentSlide: 0,
+                    slides: [
+                        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+                        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+                        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
+                    ],
+                    init() {
+                        setInterval(() => {
+                            this.currentSlide = (this.currentSlide + 1) % this.slides.length
+                        }, 4000)
+                    }
+                }">
+                    <!-- Main Image -->
+                    <div class="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                        <template x-for="(slide, index) in slides" :key="index">
+                            <div x-show="currentSlide === index"
+                                 x-transition:enter="transition ease-out duration-500"
+                                 x-transition:enter-start="opacity-0 transform scale-95"
+                                 x-transition:enter-end="opacity-100 transform scale-100"
+                                 x-transition:leave="transition ease-in duration-300"
+                                 x-transition:leave-start="opacity-100 transform scale-100"
+                                 x-transition:leave-end="opacity-0 transform scale-95"
+                                 class="absolute inset-0">
+                                <img :src="slide" alt="Banner" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent"></div>
+                            </div>
+                        </template>
+
+                        <!-- Slide Indicators -->
+                        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            <template x-for="(slide, index) in slides" :key="index">
+                                <button @click="currentSlide = index"
+                                        :class="currentSlide === index ? 'bg-white w-8' : 'bg-white/50 w-2'"
+                                        class="h-2 rounded-full transition-all duration-300"></button>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-secondary/30 rounded-2xl blur-xl"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/20 rounded-full blur-xl"></div>
+
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-8 -left-8 bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 animate-bounce" style="animation-duration: 3s;">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-gray-800 dark:text-white">Akkreditatsiya</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">Rasmiy tasdiqlangan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#services" class="flex flex-col items-center text-white/60 hover:text-white transition-colors">
+            <span class="text-sm mb-2">Pastga</span>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </a>
+    </div>
+</section>
