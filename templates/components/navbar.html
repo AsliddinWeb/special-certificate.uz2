@@ -1,15 +1,13 @@
+{% load static %}
+
 <header class="fixed top-0 md:top-[42px] left-0 right-0 z-40 transition-all duration-300 bg-transparent" id="navbar">
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
 
             <!-- Logo -->
             <a href="{% url 'core:home' %}" class="flex items-center space-x-3 flex-shrink-0">
-                <div class="w-11 h-11 bg-secondary rounded-lg flex items-center justify-center shadow-lg flex-shrink-0">
-                    <span class="text-white font-bold text-lg">SC</span>
-                </div>
-                <span class="font-bold text-lg hidden sm:block nav-text text-white transition-colors duration-300">
-                    Special Certificate
-                </span>
+                <img src="{% static 'images/logo.png' %}" alt="Special Certificate" class="h-11 w-auto">
+
             </a>
 
             <!-- Desktop Menu -->

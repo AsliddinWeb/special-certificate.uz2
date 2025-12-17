@@ -18,10 +18,10 @@
             Sinov laboratoriyasi
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-            Qurilish materiallarini sinash
+            Qurilish va kimyo maxsulotlarini sinash
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Zamonaviy uskunalar bilan jihozlangan laboratoriyamizda qurilish materiallarining sifatini aniqlaymiz
+            Zamonaviy uskunalar va malakali xodimlar bilan ta'minlangan labaratoriyamizda qurilish va kimyo maxsulotlarining standart talablariga asosan sinov o'tkaziladi
         </p>
     </div>
 </section>
@@ -30,23 +30,54 @@
 <section class="py-20 bg-white dark:bg-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
-            
-            <!-- Image -->
+
+            <!-- Image Slider -->
             <div class="relative" data-aos="fade-right">
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <div class="aspect-[4/3] bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center">
-                        <div class="text-center text-white p-8">
-                            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                                </svg>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl" x-data="{
+                    currentSlide: 0,
+                    slides: [
+                        'https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=800&q=80',
+                        'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80',
+                        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
+                    ],
+                    init() {
+                        setInterval(() => {
+                            this.currentSlide = (this.currentSlide + 1) % this.slides.length
+                        }, 4000)
+                    }
+                }">
+                    <div class="aspect-[4/3] relative">
+                        <template x-for="(slide, index) in slides" :key="index">
+                            <div x-show="currentSlide === index"
+                                 x-transition:enter="transition ease-out duration-500"
+                                 x-transition:enter-start="opacity-0 transform scale-95"
+                                 x-transition:enter-end="opacity-100 transform scale-100"
+                                 x-transition:leave="transition ease-in duration-300"
+                                 x-transition:leave-start="opacity-100 transform scale-100"
+                                 x-transition:leave-end="opacity-0 transform scale-95"
+                                 class="absolute inset-0">
+                                <img :src="slide" alt="Sinov laboratoriyasi" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                             </div>
+                        </template>
+
+                        <!-- Text Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
                             <h3 class="text-2xl font-bold mb-2">Sinov laboratoriyasi</h3>
                             <p class="text-white/80">Akkreditatsiyadan o'tgan</p>
                         </div>
+
+                        <!-- Slide Indicators -->
+                        <div class="absolute bottom-4 right-4 flex space-x-2">
+                            <template x-for="(slide, index) in slides" :key="index">
+                                <button @click="currentSlide = index"
+                                        :class="currentSlide === index ? 'bg-white w-6' : 'bg-white/50 w-2'"
+                                        class="h-2 rounded-full transition-all duration-300"></button>
+                            </template>
+                        </div>
                     </div>
                 </div>
-                
+
                 <!-- Badge -->
                 <div class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-700 rounded-2xl p-4 shadow-xl" data-aos="zoom-in" data-aos-delay="300">
                     <div class="flex items-center space-x-3">
@@ -56,13 +87,13 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="font-bold text-dark dark:text-white">50+</div>
+                            <div class="font-bold text-dark dark:text-white">200+</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400">Sinov uskunalari</div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Content -->
             <div data-aos="fade-left">
                 <span class="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold mb-4">
@@ -72,12 +103,9 @@
                     Zamonaviy sinov laboratoriyasi
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    Sinov laboratoriyamiz O'zbekiston Texnik Tartibga Solish Agentligi tomonidan akkreditatsiyadan o'tgan. Biz qurilish materiallarini xalqaro standartlarga muvofiq sinaymiz.
+                    Sinov laboratoriyamiz "O'zbekiston akkreditatsiya markazi" DM tomonidan akkreditatsiyadan o'tgan.
                 </p>
-                <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                    Laboratoriyamizning asosiy yo'nalishi temir-beton va beton buyumlari, qum, shag'al, sement, bitum, asfaltbeton va boshqa qurilish materiallarini sinashdir.
-                </p>
-                
+
                 <!-- Features -->
                 <div class="grid sm:grid-cols-2 gap-4">
                     <div class="flex items-center space-x-3 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
@@ -110,7 +138,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <span class="text-gray-700 dark:text-gray-300 font-medium">Tez xizmat</span>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium">Sifatli xizmat</span>
                     </div>
                 </div>
             </div>
@@ -136,195 +164,119 @@
         </div>
         
         <!-- Services Grid -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Service 1 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Qum va shag'al</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Zich tog' jinslaridan olingan shag'al va qumni qurilish ishlari uchun sinash</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Granulometrik tarkib</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Namlik darajasi</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Zichlik</span>
-                    </li>
-                </ul>
+        <div class="flex flex-col lg:flex-row justify-center gap-8 max-w-5xl mx-auto">
+
+        <!-- Service 1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 group flex-1 max-w-lg" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                <svg class="w-10 h-10 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                </svg>
             </div>
-            
-            <!-- Service 2 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="150">
-                <div class="w-16 h-16 bg-gray-200 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Qurilish maxsulotlari</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">Sinovdan o'tkazilayotgan ob'ekt nomi</p>
+            <ul class="space-y-3 text-gray-500 dark:text-gray-400">
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Sement</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Umumqurilish sementlari, portlandsement va shlakportlandsement sinovi</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Mustahkamlik sinovi</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Qotish vaqti</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Maydalik moduli</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Service 3 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                    <span>Qurilish ishlari uchun qum</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Bitum va asfaltbeton</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Neft bitumlari, yo'l va qurilish bitumlari, asfaltbeton aralashmalari</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Penetratsiya</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Yumshalish temperaturasi</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Cho'zilish</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Service 4 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="250">
-                <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    <span>Qurilish ishlari uchun shag'al va mayda tosh</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Beton va temir-beton</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Temir-beton va beton buyumlarini sinash, plitalar va konstruksiyalar</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Siqilishga mustahkamlik</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Egilishga mustahkamlik</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Suv o'tkazuvchanlik</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Service 5 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                    <span>Betonlar</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Keramzitbeton bloklari</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Yengil betonlar uchun g'ovak to'ldirgichlar, devor bloklari</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Zichlik</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Issiqlik o'tkazuvchanlik</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Sovuqqa chidamlilik</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Service 6 -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="350">
-                <div class="w-16 h-16 bg-teal-100 dark:bg-teal-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <svg class="w-8 h-8 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    <span>Gruntlar (tuproqlar)</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Beton tosh bloklari</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Beton devor toshlari, temir-beton plitalar va konstruksiyalar</p>
-                <ul class="space-y-2 text-sm text-gray-500 dark:text-gray-400">
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Geometrik o'lchamlar</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Mustahkamlik sinfi</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        <span>Sirt sifati</span>
-                    </li>
-                </ul>
+                    <span>Sementlar</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Asfaltbeton aralashmalari</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>...</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 group flex-1 max-w-lg" data-aos="fade-up" data-aos-delay="150">
+            <div class="w-20 h-20 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                <svg class="w-10 h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
             </div>
+            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Kimyo maxsulotlari</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">Sinovdan o'tkazilayotgan ob'ekt nomi</p>
+            <ul class="space-y-3 text-gray-500 dark:text-gray-400">
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Tabiiy gaz (yoqilg'i siqilgan gaz, magistral gaz)</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Suyultirilgan uglevodorod gazlari</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Barqaror gaz kondensati</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Suyuq kimyoviy mahsulotlar</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Ichimlik suvi</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Bo'r</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>...</span>
+                </li>
+            </ul>
         </div>
     </div>
+        </div>
 </section>
 
 <!-- Equipment Section -->
@@ -390,77 +342,6 @@
     </div>
 </section>
 
-<!-- Testing Process Section -->
-<section class="py-20 bg-gray-50 dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div class="text-center mb-16" data-aos="fade-up">
-            <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Sinov jarayoni
-            </span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Sinov qanday o'tkaziladi?
-            </h2>
-        </div>
-        
-        <!-- Process Steps -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <div class="relative" data-aos="fade-up" data-aos-delay="100">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center relative z-10">
-                    <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
-                    <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Ariza topshirish</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Sinov uchun ariza topshiring va namunalarni yetkazib bering</p>
-                </div>
-                <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 z-0">
-                    <svg class="w-8 h-8 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-            
-            <div class="relative" data-aos="fade-up" data-aos-delay="200">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center relative z-10">
-                    <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
-                    <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Namunalarni qabul qilish</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Namunalar tekshiriladi va laboratoriyaga qabul qilinadi</p>
-                </div>
-                <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 z-0">
-                    <svg class="w-8 h-8 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-            
-            <div class="relative" data-aos="fade-up" data-aos-delay="300">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center relative z-10">
-                    <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
-                    <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Sinov o'tkazish</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Malakali mutaxassislar sinov o'tkazadi</p>
-                </div>
-                <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 z-0">
-                    <svg class="w-8 h-8 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-            
-            <div data-aos="fade-up" data-aos-delay="400">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Natija berish</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Sinov bayonnomasi va xulosalar taqdim etiladi</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Stats Section -->
 <section class="py-20 bg-gradient-to-r from-green-600 via-teal-600 to-green-600 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
@@ -499,10 +380,10 @@
             
             <div class="relative">
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-                    Materiallaringizni sinatmoqchimisiz?
+                    Maxsulotlaringizni sinatmoqchimisiz?
                 </h2>
                 <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-                    Biz bilan bog'laning — namunalarni qabul qilamiz va tez vaqt ichida natijalarni taqdim etamiz
+                    Biz bilan bog'laning — namunalarni qabul qilamiz va natijalarni taqdim etamiz
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="{% url 'core:contact' %}" class="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 hover:bg-gray-100 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
