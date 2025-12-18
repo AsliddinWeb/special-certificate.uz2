@@ -10,8 +10,15 @@ admin.site.index_title = "Boshqaruv paneli"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Bosh sahifa
     path('', include('apps.core.urls')),
+
+    # Servislar
     path('services/', include('apps.services.urls')),
+
+    # Galereya
+    path('gallery/', include('apps.gallery.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     # Local APPS
     'apps.core',
     'apps.services',
+    'apps.gallery',
 ]
 
 MIDDLEWARE = [
