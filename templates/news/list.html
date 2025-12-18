@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Yangiliklar | Special Certificate{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="relative pt-32 pb-20 bg-gradient-to-br from-dark via-primary to-dark overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><pattern id=%22grid%22 width=%2210%22 height=%2210%22 patternUnits=%22userSpaceOnUse%22><path d=%22M 10 0 L 0 0 0 10%22 fill=%22none%22 stroke=%22white%22 stroke-width=%220.5%22/></pattern></defs><rect width=%22100%22 height=%22100%22 fill=%22url(%23grid)%22/></svg>'); background-size: 50px 50px;"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium mb-6" data-aos="fade-up">
+            Blog
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
+            {% if current_category %}
+                {{ current_category.name }}
+            {% else %}
+                Yangiliklar
+            {% endif %}
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            Eng so'nggi yangiliklar va maqolalar
+        </p>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="py-20 bg-white dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Categories Filter -->
+        {% if categories %}
+        <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+            <a href="{% url 'news:list' %}" 
+               class="px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 {% if not current_category %}bg-secondary text-white{% else %}bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-secondary hover:text-white{% endif %}">
+                Barchasi
+            </a>
+            {% for category in categories %}
+            <a href="{% url 'news:category' category.slug %}" 
+               class="px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 {% if current_category.slug == category.slug %}bg-secondary text-white{% else %}bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-secondary hover:text-white{% endif %}">
+                {{ category.name }}
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        <!-- News Grid -->
+        {% if news %}
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for item in news %}
+            <article class="group bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+                
+                <!-- Image -->
+                <a href="{{ item.get_absolute_url }}" class="block relative aspect-[16/10] overflow-hidden">
+                    <img src="{{ item.image.url }}" alt="{{ item.title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {% if item.category %}
+                    <span class="absolute top-4 left-4 px-3 py-1 bg-secondary text-white text-xs font-semibold rounded-full">
+                        {{ item.category.name }}
+                    </span>
+                    {% endif %}
+                </a>
+                
+                <!-- Content -->
+                <div class="p-6">
+                    <!-- Date -->
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        {{ item.created_at|date:"d M, Y" }}
+                        
+                        <span class="mx-2">•</span>
+                        
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                        {{ item.views }}
+                    </div>
+                    
+                    <!-- Title -->
+                    <h2 class="text-xl font-bold text-dark dark:text-white mb-3 group-hover:text-secondary transition-colors line-clamp-2">
+                        <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+                    </h2>
+                    
+                    <!-- Excerpt -->
+                    <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4">
+                        {{ item.excerpt }}
+                    </p>
+                    
+                    <!-- Read More -->
+                    <a href="{{ item.get_absolute_url }}" class="inline-flex items-center text-secondary font-semibold text-sm group-hover:gap-2 transition-all">
+                        Batafsil o'qish
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        {% if news.has_other_pages %}
+        <div class="flex justify-center items-center space-x-2 mt-12" data-aos="fade-up">
+            {% if news.has_previous %}
+            <a href="?page={{ news.previous_page_number }}{% if current_category %}&category={{ current_category }}{% endif %}" 
+               class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-secondary hover:text-white transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            {% endif %}
+            
+            {% for num in news.paginator.page_range %}
+                {% if news.number == num %}
+                <span class="w-10 h-10 flex items-center justify-center rounded-lg bg-secondary text-white font-semibold">{{ num }}</span>
+                {% elif num > news.number|add:'-3' and num < news.number|add:'3' %}
+                <a href="?page={{ num }}{% if current_category %}&category={{ current_category }}{% endif %}" 
+                   class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-secondary hover:text-white transition-colors">
+                    {{ num }}
+                </a>
+                {% endif %}
+            {% endfor %}
+            
+            {% if news.has_next %}
+            <a href="?page={{ news.next_page_number }}{% if current_category %}&category={{ current_category }}{% endif %}" 
+               class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-secondary hover:text-white transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+            {% endif %}
+        </div>
+        {% endif %}
+        
+        {% else %}
+        <!-- Empty State -->
+        <div class="text-center py-20">
+            <div class="w-24 h-24 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-dark dark:text-white mb-2">Yangiliklar hali qo'shilmagan</h3>
+            <p class="text-gray-600 dark:text-gray-400">Tez orada yangi maqolalar qo'shiladi</p>
+        </div>
+        {% endif %}
+        
+    </div>
+</section>
+
+{% endblock %}

@@ -19,6 +19,9 @@ urlpatterns = [
 
     # Galereya
     path('gallery/', include('apps.gallery.urls')),
+
+    # Yangiliklar
+    path('news/', include('apps.news.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

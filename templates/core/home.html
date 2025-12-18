@@ -61,8 +61,93 @@
     </div>
 </section>
 
+<!-- News Section -->
+<section class="py-20 bg-gray-50 dark:bg-gray-900" id="news">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
+                Yangiliklar
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
+                So'nggi yangiliklar
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Kompaniyamiz faoliyati va soha yangiliklari bilan tanishing
+            </p>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for item in latest_news %}
+            <article class="group bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="{{ forloop.counter }}00">
+
+                <!-- Image -->
+                <a href="{{ item.get_absolute_url }}" class="block relative aspect-[16/10] overflow-hidden">
+                    <img src="{{ item.image.url }}" alt="{{ item.title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                    {% if item.category %}
+                    <span class="absolute top-4 left-4 px-3 py-1 bg-secondary text-white text-xs font-semibold rounded-full">
+                        {{ item.category.name }}
+                    </span>
+                    {% endif %}
+                </a>
+
+                <!-- Content -->
+                <div class="p-6">
+                    <!-- Date -->
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        {{ item.created_at|date:"d M, Y" }}
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-xl font-bold text-dark dark:text-white mb-3 group-hover:text-secondary transition-colors line-clamp-2">
+                        <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+                    </h3>
+
+                    <!-- Excerpt -->
+                    <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-2 mb-4">
+                        {{ item.excerpt }}
+                    </p>
+
+                    <!-- Read More -->
+                    <a href="{{ item.get_absolute_url }}" class="inline-flex items-center text-secondary font-semibold text-sm">
+                        Batafsil
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {% empty %}
+            <div class="col-span-full text-center py-12">
+                <p class="text-gray-500 dark:text-gray-400">Yangiliklar hali qo'shilmagan</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- View All Button -->
+        {% if latest_news %}
+        <div class="text-center mt-12" data-aos="fade-up">
+            <a href="{% url 'news:list' %}" class="inline-flex items-center px-8 py-4 bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
+                Barcha yangiliklar
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
+        {% endif %}
+
+    </div>
+</section>
+
 <!-- About Section -->
-<section class="py-20 bg-gray-50 dark:bg-gray-900">
+<section class="py-20 bg-white dark:bg-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -146,7 +231,7 @@
 </section>
 
 <!-- Documents Section -->
-<section class="py-20 bg-white dark:bg-gray-800">
+<section class="py-20 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Section Header -->
@@ -420,7 +505,7 @@
 </section>
 
 <!-- Certificates Section -->
-<section class="py-20 bg-gray-50 dark:bg-gray-900">
+<section class="py-20 bg-white dark:bg-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Section Header -->

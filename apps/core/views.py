@@ -2,13 +2,20 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm
 from .utils import send_telegram_message
+
 from apps.services.models import Service
+from apps.news.models import News
 
 
 def home(request):
     services = Service.objects.filter(is_active=True)[:6]
+
+    # So'nggi 3 ta yangilik
+    latest_news = News.objects.filter(is_active=True)[:3]
+
     context = {
-        'services': services
+        'services': services,
+        'latest_news': latest_news,
     }
     return render(request, 'core/home.html', context)
 
