@@ -1,4 +1,5 @@
-{% load static %}
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 
 <header class="fixed top-0 md:top-[42px] left-0 right-0 z-40 transition-all duration-300 bg-transparent" id="navbar">
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,19 +14,19 @@
             <!-- Desktop Menu -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="{% url 'core:home' %}" class="nav-link font-medium text-white/90 hover:text-white transition-colors duration-300">
-                    Bosh sahifa
+                    {% trans "Bosh sahifa" %}
                 </a>
                 <a href="{% url 'core:about' %}" class="nav-link font-medium text-white/90 hover:text-white transition-colors duration-300">
-                    Biz haqimizda
+                    {% trans "Biz haqimizda" %}
                 </a>
                 <a href="{% url 'services:list' %}" class="nav-link font-medium text-white/90 hover:text-white transition-colors duration-300">
-                    Xizmatlar
+                    {% trans "Xizmatlar" %}
                 </a>
                 <a href="{% url 'gallery:index' %}" class="nav-link font-medium text-white/90 hover:text-white transition-colors duration-300">
-                    Galereya
+                    {% trans "Galereya" %}
                 </a>
                 <a href="{% url 'core:contact' %}" class="flex-shrink-0 bg-secondary hover:bg-primary text-white px-6 py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-lg">
-                    Bog'lanish
+                    {% trans "Bog'lanish" %}
                 </a>
             </nav>
 
@@ -33,7 +34,7 @@
             <button type="button"
                     class="md:hidden flex items-center justify-center w-11 h-11 rounded-xl bg-white/10 border border-white/20 flex-shrink-0 transition-all duration-300"
                     id="mobile-menu-btn"
-                    aria-label="Menyu">
+                    aria-label="{% trans 'Menyu' %}">
                 <svg class="w-6 h-6 text-white hamburger-icon transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
@@ -51,25 +52,25 @@
                 <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
                 </svg>
-                <span class="font-medium">Bosh sahifa</span>
+                <span class="font-medium">{% trans "Bosh sahifa" %}</span>
             </a>
             <a href="{% url 'core:about' %}" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-secondary/10 hover:text-secondary transition-all">
                 <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <span class="font-medium">Biz haqimizda</span>
+                <span class="font-medium">{% trans "Biz haqimizda" %}</span>
             </a>
             <a href="{% url 'services:list' %}" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-secondary/10 hover:text-secondary transition-all">
                 <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                 </svg>
-                <span class="font-medium">Xizmatlar</span>
+                <span class="font-medium">{% trans "Xizmatlar" %}</span>
             </a>
             <a href="{% url 'gallery:index' %}" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-secondary/10 hover:text-secondary transition-all">
                 <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
-                <span class="font-medium">Galereya</span>
+                <span class="font-medium">{% trans "Galereya" %}</span>
             </a>
 
             <!-- Contact Button -->
@@ -78,7 +79,7 @@
                     <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
-                    <span>Bog'lanish</span>
+                    <span>{% trans "Bog'lanish" %}</span>
                 </a>
             </div>
 
@@ -94,8 +95,18 @@
 
             <!-- Language in Mobile -->
             <div class="pt-4 flex justify-center space-x-2">
-                <button data-lang="uz" class="px-4 py-2 rounded-lg bg-secondary text-white text-sm font-medium">UZ</button>
-                <button data-lang="ru" class="px-4 py-2 rounded-lg bg-gray-100 text-gray-600 text-sm font-medium hover:bg-gray-200">RU</button>
+                <form action="{% url 'set_language' %}" method="post" class="inline">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to|default:request.get_full_path }}">
+                    <input name="language" type="hidden" value="uz">
+                    <button type="submit" class="px-4 py-2 rounded-lg text-sm font-medium {% if LANGUAGE_CODE == 'uz' %}bg-secondary text-white{% else %}bg-gray-100 text-gray-600 hover:bg-gray-200{% endif %}">UZ</button>
+                </form>
+                <form action="{% url 'set_language' %}" method="post" class="inline">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to|default:request.get_full_path }}">
+                    <input name="language" type="hidden" value="ru">
+                    <button type="submit" class="px-4 py-2 rounded-lg text-sm font-medium {% if LANGUAGE_CODE == 'ru' %}bg-secondary text-white{% else %}bg-gray-100 text-gray-600 hover:bg-gray-200{% endif %}">RU</button>
+                </form>
             </div>
         </div>
     </div>

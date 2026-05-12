@@ -305,34 +305,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, delay);
     });
 
-    // ============ Language Selector ============
-    const langButtons = document.querySelectorAll('[data-lang]');
-
-    langButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const lang = this.dataset.lang;
-
-            // Update all language buttons
-            document.querySelectorAll('[data-lang]').forEach(b => {
-                if (b.dataset.lang === lang) {
-                    b.classList.add('bg-secondary', 'text-white');
-                    b.classList.remove('text-gray-400', 'hover:text-white', 'bg-gray-100', 'text-gray-600');
-                } else {
-                    b.classList.remove('bg-secondary', 'text-white');
-                    // Check if it's in topbar or mobile menu
-                    if (b.closest('.topbar')) {
-                        b.classList.add('text-gray-400', 'hover:text-white');
-                    } else {
-                        b.classList.add('bg-gray-100', 'text-gray-600');
-                    }
-                }
-            });
-
-            localStorage.setItem('lang', lang);
-            console.log('Language selected:', lang);
-        });
-    });
-
     // ============ External Links ============
     document.querySelectorAll('a[href^="http"]').forEach(link => {
         if (!link.href.includes(window.location.hostname)) {

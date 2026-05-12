@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.utils.translation import gettext as _
 from .forms import ContactForm
 from .utils import send_telegram_message
 
@@ -30,7 +31,7 @@ def contact(request):
         if form.is_valid():
             contact_message = form.save()
 
-            # Telegram xabar
+            # Telegram xabar (admin uchun — har doim o'zbekcha)
             tg_message = f"""
 <b>📩 Yangi xabar!</b>
 
@@ -43,7 +44,7 @@ def contact(request):
 """
             send_telegram_message(tg_message)
 
-            messages.success(request, 'Xabaringiz muvaffaqiyatli yuborildi!')
+            messages.success(request, _('Xabaringiz muvaffaqiyatli yuborildi!'))
             return redirect('core:contact')
     else:
         form = ContactForm()

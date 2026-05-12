@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Bog'lanish | Special Certificate{% endblock %}
+{% block title %}{% trans "Bog'lanish" %} | Special Certificate{% endblock %}
 
-{% block meta_description %}Special Certificate bilan bog'laning. Manzil: Qarshi shahri, Katta bog' ko'chasi, 13B{% endblock %}
+{% block meta_description %}{% trans "Special Certificate bilan bog'laning. Manzil: Qarshi shahri, Katta bog' ko'chasi, 13B" %}{% endblock %}
 
 {% block content %}
 
@@ -15,13 +15,13 @@
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium mb-6" data-aos="fade-up">
-            Aloqa
+            {% trans "Aloqa" %}
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-            Bog'lanish
+            {% trans "Bog'lanish" %}
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Savollaringiz bormi? Biz bilan bog'laning!
+            {% trans "Savollaringiz bormi? Biz bilan bog'laning!" %}
         </p>
     </div>
 </section>
@@ -34,13 +34,13 @@
             <!-- Contact Info -->
             <div data-aos="fade-right">
                 <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                    Kontakt ma'lumotlar
+                    {% trans "Kontakt ma'lumotlar" %}
                 </span>
                 <h2 class="text-3xl font-bold text-dark dark:text-white mb-6">
-                    Biz bilan bog'laning
+                    {% trans "Biz bilan bog'laning" %}
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
-                    Sertifikatlashtirish va sinov xizmatlari bo'yicha savollaringiz bo'lsa, biz bilan bog'laning. Mutaxassislarimiz sizga yordam berishadi.
+                    {% trans "Sertifikatlashtirish va sinov xizmatlari bo'yicha savollaringiz bo'lsa, biz bilan bog'laning. Mutaxassislarimiz sizga yordam berishadi." %}
                 </p>
 
                 <!-- Contact Cards -->
@@ -55,10 +55,10 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-dark dark:text-white mb-1">Manzil</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Qarshi shahri, Katta bog' ko'chasi, 13B</p>
+                            <h3 class="font-semibold text-dark dark:text-white mb-1">{% trans "Manzil" %}</h3>
+                            <p class="text-gray-600 dark:text-gray-400">{% trans "Qarshi shahri, Katta bog' ko'chasi, 13B" %}</p>
                             <a href="https://maps.google.com/?q=Qarshi" target="_blank" class="inline-flex items-center text-secondary text-sm font-medium mt-2 hover:text-primary transition-colors">
-                                Xaritada ko'rish
+                                {% trans "Xaritada ko'rish" %}
                                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                                 </svg>
@@ -74,11 +74,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-dark dark:text-white mb-1">Telefon</h3>
+                            <h3 class="font-semibold text-dark dark:text-white mb-1">{% trans "Telefon" %}</h3>
                             <a href="tel:+998908853030" class="text-gray-600 dark:text-gray-400 hover:text-secondary transition-colors">
                                 +998 (90) 885-30-30
                             </a>
-                            <p class="text-gray-500 dark:text-gray-500 text-sm mt-1">Dush-Juma: 09:00 - 18:00</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-sm mt-1">{% trans "Dush-Juma: 09:00 - 18:00" %}</p>
                         </div>
                     </div>
 
@@ -90,11 +90,11 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-dark dark:text-white mb-1">Email</h3>
+                            <h3 class="font-semibold text-dark dark:text-white mb-1">{% trans "Email" %}</h3>
                             <a href="mailto:special.certificate@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-secondary transition-colors">
                                 special.certificate@gmail.com
                             </a>
-                            <p class="text-gray-500 dark:text-gray-500 text-sm mt-1">24 soat ichida javob beramiz</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-sm mt-1">{% trans "24 soat ichida javob beramiz" %}</p>
                         </div>
                     </div>
 
@@ -106,8 +106,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-dark dark:text-white mb-1">Ish vaqti</h3>
-                            <p class="text-gray-600 dark:text-gray-400">Dushanba - Juma</p>
+                            <h3 class="font-semibold text-dark dark:text-white mb-1">{% trans "Ish vaqti" %}</h3>
+                            <p class="text-gray-600 dark:text-gray-400">{% trans "Dushanba - Juma" %}</p>
                             <p class="text-secondary font-medium">09:00 - 18:00</p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
 
                 <!-- Social Links -->
                 <div class="mt-10">
-                    <h3 class="font-semibold text-dark dark:text-white mb-4">Ijtimoiy tarmoqlar</h3>
+                    <h3 class="font-semibold text-dark dark:text-white mb-4">{% trans "Ijtimoiy tarmoqlar" %}</h3>
                     <div class="flex space-x-4">
                         <a href="#" class="w-12 h-12 bg-gray-100 dark:bg-gray-700 hover:bg-secondary rounded-xl flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white transition-all duration-300">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -139,8 +139,8 @@
             <!-- Contact Form -->
             <div data-aos="fade-left">
                 <div class="bg-gray-50 dark:bg-gray-700 rounded-3xl p-8 lg:p-10">
-                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-2">Xabar yuborish</h3>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8">Formani to'ldiring, biz siz bilan bog'lanamiz</p>
+                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-2">{% trans "Xabar yuborish" %}</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8">{% trans "Formani to'ldiring, biz siz bilan bog'lanamiz" %}</p>
 
                     <!-- Success Message -->
                     {% if messages %}
@@ -168,14 +168,14 @@
                         <!-- Name -->
                         <div>
                             <label for="name" class="block text-sm font-medium text-dark dark:text-white mb-2">
-                                Ismingiz <span class="text-red-500">*</span>
+                                {% trans "Ismingiz" %} <span class="text-red-500">*</span>
                             </label>
                             <input
                                 type="text"
                                 id="name"
                                 name="name"
                                 required
-                                placeholder="Ismingizni kiriting"
+                                placeholder="{% trans 'Ismingizni kiriting' %}"
                                 class="w-full px-4 py-4 rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-dark dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
                             >
                         </div>
@@ -183,7 +183,7 @@
                         <!-- Phone -->
                         <div>
                             <label for="phone" class="block text-sm font-medium text-dark dark:text-white mb-2">
-                                Telefon raqam <span class="text-red-500">*</span>
+                                {% trans "Telefon raqam" %} <span class="text-red-500">*</span>
                             </label>
                             <input
                                 type="tel"
@@ -198,7 +198,7 @@
                         <!-- Email -->
                         <div>
                             <label for="email" class="block text-sm font-medium text-dark dark:text-white mb-2">
-                                Email
+                                {% trans "Email" %}
                             </label>
                             <input
                                 type="email"
@@ -212,14 +212,14 @@
                         <!-- Message -->
                         <div>
                             <label for="message" class="block text-sm font-medium text-dark dark:text-white mb-2">
-                                Xabar <span class="text-red-500">*</span>
+                                {% trans "Xabar" %} <span class="text-red-500">*</span>
                             </label>
                             <textarea
                                 id="message"
                                 name="message"
                                 rows="5"
                                 required
-                                placeholder="Xabaringizni yozing..."
+                                placeholder="{% trans 'Xabaringizni yozing...' %}"
                                 class="w-full px-4 py-4 rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-dark dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all resize-none"
                             ></textarea>
                         </div>
@@ -232,7 +232,7 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                             </svg>
-                            <span>Yuborish</span>
+                            <span>{% trans "Yuborish" %}</span>
                         </button>
                     </form>
                 </div>
@@ -248,13 +248,13 @@
         <!-- Section Header -->
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Joylashuv
+                {% trans "Joylashuv" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Bizning manzil
+                {% trans "Bizning manzil" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Qarshi shahar markazida joylashganmiz. Xaritada ko'ring va bizga tashrif buyuring.
+                {% trans "Qarshi shahar markazida joylashganmiz. Xaritada ko'ring va bizga tashrif buyuring." %}
             </p>
         </div>
 
@@ -284,9 +284,9 @@
                     </div>
                     <div>
                         <h3 class="font-bold text-dark dark:text-white mb-1">Special Certificate</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm">Qarshi shahri, Katta bog' ko'chasi, 13B</p>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Qarshi shahri, Katta bog' ko'chasi, 13B" %}</p>
                         <a href="https://maps.google.com/?q=Qarshi,+Katta+bog'+ko'chasi+13B" target="_blank" class="inline-flex items-center text-secondary text-sm font-medium mt-2 hover:text-primary transition-colors">
-                            Yo'nalishni olish
+                            {% trans "Yo'nalishni olish" %}
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
@@ -305,10 +305,10 @@
         <!-- Section Header -->
         <div class="text-center mb-12" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Ko'p beriladigan savollar
+                {% trans "Ko'p beriladigan savollar" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Savollar va javoblar
+                {% trans "Savollar va javoblar" %}
             </h2>
         </div>
 
@@ -318,14 +318,14 @@
             <!-- FAQ 1 -->
             <div x-data="{ open: false }" class="bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden">
                 <button @click="open = !open" class="w-full px-6 py-5 flex items-center justify-between text-left">
-                    <span class="font-semibold text-dark dark:text-white">Sertifikat olish uchun qancha vaqt ketadi?</span>
+                    <span class="font-semibold text-dark dark:text-white">{% trans "Sertifikat olish uchun qancha vaqt ketadi?" %}</span>
                     <svg class="w-5 h-5 text-secondary transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
                 <div x-show="open" x-collapse class="px-6 pb-5">
                     <p class="text-gray-600 dark:text-gray-400">
-                        Sertifikatlashtirish jarayoni odatda 5-10 ish kunini oladi. Bu materialning turiga va sinov hajmiga bog'liq. Tezkor xizmat ham mavjud.
+                        {% trans "Sertifikatlashtirish jarayoni odatda 5-10 ish kunini oladi. Bu materialning turiga va sinov hajmiga bog'liq. Tezkor xizmat ham mavjud." %}
                     </p>
                 </div>
             </div>
@@ -333,14 +333,14 @@
             <!-- FAQ 2 -->
             <div x-data="{ open: false }" class="bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden">
                 <button @click="open = !open" class="w-full px-6 py-5 flex items-center justify-between text-left">
-                    <span class="font-semibold text-dark dark:text-white">Qanday hujjatlar talab qilinadi?</span>
+                    <span class="font-semibold text-dark dark:text-white">{% trans "Qanday hujjatlar talab qilinadi?" %}</span>
                     <svg class="w-5 h-5 text-secondary transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
                 <div x-show="open" x-collapse class="px-6 pb-5">
                     <p class="text-gray-600 dark:text-gray-400">
-                        Ariza, kompaniya guvohnomasi nusxasi, mahsulot haqida texnik hujjatlar talab qilinadi. To'liq ro'yxat uchun biz bilan bog'laning.
+                        {% trans "Ariza, kompaniya guvohnomasi nusxasi, mahsulot haqida texnik hujjatlar talab qilinadi. To'liq ro'yxat uchun biz bilan bog'laning." %}
                     </p>
                 </div>
             </div>
@@ -348,14 +348,14 @@
             <!-- FAQ 3 -->
             <div x-data="{ open: false }" class="bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden">
                 <button @click="open = !open" class="w-full px-6 py-5 flex items-center justify-between text-left">
-                    <span class="font-semibold text-dark dark:text-white">Sertifikat qancha muddatga beriladi?</span>
+                    <span class="font-semibold text-dark dark:text-white">{% trans "Sertifikat qancha muddatga beriladi?" %}</span>
                     <svg class="w-5 h-5 text-secondary transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
                 <div x-show="open" x-collapse class="px-6 pb-5">
                     <p class="text-gray-600 dark:text-gray-400">
-                        Muvofiqlik sertifikati odatda 1 yildan 3 yilgacha muddatga beriladi. Bu sertifikatlashtirish sxemasiga bog'liq.
+                        {% trans "Muvofiqlik sertifikati odatda 1 yildan 3 yilgacha muddatga beriladi. Bu sertifikatlashtirish sxemasiga bog'liq." %}
                     </p>
                 </div>
             </div>
@@ -363,14 +363,14 @@
             <!-- FAQ 4 -->
             <div x-data="{ open: false }" class="bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden">
                 <button @click="open = !open" class="w-full px-6 py-5 flex items-center justify-between text-left">
-                    <span class="font-semibold text-dark dark:text-white">Sinov namunalarini qanday topshirish kerak?</span>
+                    <span class="font-semibold text-dark dark:text-white">{% trans "Sinov namunalarini qanday topshirish kerak?" %}</span>
                     <svg class="w-5 h-5 text-secondary transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
                 <div x-show="open" x-collapse class="px-6 pb-5">
                     <p class="text-gray-600 dark:text-gray-400">
-                        Sinov namunalarini bizning manzilimizga olib kelishingiz yoki biz o'zimiz olib ketishimiz mumkin. Namunalar soni va hajmi standart talablarga muvofiq belgilanadi.
+                        {% trans "Sinov namunalarini bizning manzilimizga olib kelishingiz yoki biz o'zimiz olib ketishimiz mumkin. Namunalar soni va hajmi standart talablarga muvofiq belgilanadi." %}
                     </p>
                 </div>
             </div>
@@ -378,14 +378,14 @@
             <!-- FAQ 5 -->
             <div x-data="{ open: false }" class="bg-gray-50 dark:bg-gray-700 rounded-2xl overflow-hidden">
                 <button @click="open = !open" class="w-full px-6 py-5 flex items-center justify-between text-left">
-                    <span class="font-semibold text-dark dark:text-white">Xizmat narxlari qanday?</span>
+                    <span class="font-semibold text-dark dark:text-white">{% trans "Xizmat narxlari qanday?" %}</span>
                     <svg class="w-5 h-5 text-secondary transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </button>
                 <div x-show="open" x-collapse class="px-6 pb-5">
                     <p class="text-gray-600 dark:text-gray-400">
-                        Narxlar xizmat turiga va hajmiga qarab belgilanadi. Aniq narxlarni bilish uchun biz bilan bog'laning - bepul konsultatsiya beramiz.
+                        {% trans "Narxlar xizmat turiga va hajmiga qarab belgilanadi. Aniq narxlarni bilish uchun biz bilan bog'laning - bepul konsultatsiya beramiz." %}
                     </p>
                 </div>
             </div>
@@ -401,10 +401,10 @@
 
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
         <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Hali savollaringiz bormi?
+            {% trans "Hali savollaringiz bormi?" %}
         </h2>
         <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Bizga qo'ng'iroq qiling — mutaxassislarimiz barcha savollarga javob berishadi
+            {% trans "Bizga qo'ng'iroq qiling — mutaxassislarimiz barcha savollarga javob berishadi" %}
         </p>
         <a href="tel:+998908853030" class="inline-flex items-center justify-center px-10 py-5 bg-white text-primary hover:bg-gray-100 font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl">
             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

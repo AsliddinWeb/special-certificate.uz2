@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Sertifikatlashtirish organi | Special Certificate{% endblock %}
+{% block title %}{% trans "Sertifikatlashtirish organi" %} | Special Certificate{% endblock %}
 
-{% block meta_description %}Special Certificate sertifikatlashtirish organi - qurilish mahsulotlarini sertifikatlash xizmatlari{% endblock %}
+{% block meta_description %}{% trans "Special Certificate sertifikatlashtirish organi - qurilish mahsulotlarini sertifikatlash xizmatlari" %}{% endblock %}
 
 {% block content %}
 
@@ -15,13 +15,13 @@
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium mb-6" data-aos="fade-up">
-            Sertifikatlashtirish organi
+            {% trans "Sertifikatlashtirish organi" %}
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-            Mahsulotlarni sertifikatlashtirish
+            {% trans "Mahsulotlarni sertifikatlashtirish" %}
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            "SPECIAL CERTIFICATE" MCHJ qoshidagi mahsulot sertifikatlash organi qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida tashkil etilgan
+            {% blocktrans %}"SPECIAL CERTIFICATE" MCHJ qoshidagi mahsulot sertifikatlash organi qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida tashkil etilgan{% endblocktrans %}
         </p>
     </div>
 </section>
@@ -34,16 +34,16 @@
             <!-- Content -->
             <div data-aos="fade-right">
                 <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                    Biz haqimizda
+                    {% trans "Biz haqimizda" %}
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-6">
-                    Sertifikatlashtirish organi
+                    {% trans "Sertifikatlashtirish organi" %}
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    "SPECIAL CERTIFICATE" MCHJ qoshidagi mahsulot sertifikatlash organi qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida tashkil etilgan.
+                    {% blocktrans %}"SPECIAL CERTIFICATE" MCHJ qoshidagi mahsulot sertifikatlash organi qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida tashkil etilgan.{% endblocktrans %}
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                    Biz O'zbekiston Respublikasi Vazirlar Mahkamasining qarorlari asosida faoliyat yuritamiz va barcha manfaatdor tomonlarga teng huquqli xizmat ko'rsatamiz.
+                    {% trans "Biz O'zbekiston Respublikasi Vazirlar Mahkamasining qarorlari asosida faoliyat yuritamiz va barcha manfaatdor tomonlarga teng huquqli xizmat ko'rsatamiz." %}
                 </p>
                 
                 <!-- Contact Info -->
@@ -56,8 +56,8 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Yuridik manzil</p>
-                            <p class="text-dark dark:text-white font-medium">O'zbekiston, 180100, Qashqadaryo viloyati, Qarshi shahri, Katta bog' ko'chasi, 13B</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">{% trans "Yuridik manzil" %}</p>
+                            <p class="text-dark dark:text-white font-medium">{% trans "O'zbekiston, 180100, Qashqadaryo viloyati, Qarshi shahri, Katta bog' ko'chasi, 13B" %}</p>
                         </div>
                     </div>
                     <div class="flex items-center space-x-3">
@@ -67,7 +67,7 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Telefon</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">{% trans "Telefon" %}</p>
                             <a href="tel:+998908853030" class="text-dark dark:text-white font-medium hover:text-secondary transition-colors">+998 90 885-30-30</a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                             </svg>
                         </div>
                         <div>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Elektron pochta</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">{% trans "Elektron pochta" %}</p>
                             <a href="mailto:special.certificate@gmail.com" class="text-dark dark:text-white font-medium hover:text-secondary transition-colors">special.certificate@gmail.com</a>
                         </div>
                     </div>
@@ -95,8 +95,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-2">Sertifikatlashtirish organi</h3>
-                            <p class="text-white/80">Akkreditatsiyadan o'tgan</p>
+                            <h3 class="text-2xl font-bold mb-2">{% trans "Sertifikatlashtirish organi" %}</h3>
+                            <p class="text-white/80">{% trans "Akkreditatsiyadan o'tgan" %}</p>
                         </div>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="font-bold text-dark dark:text-white">Akkreditatsiya</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Tasdiqlangan</div>
+                            <div class="font-bold text-dark dark:text-white">{% trans "Akkreditatsiya" %}</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">{% trans "Tasdiqlangan" %}</div>
                         </div>
                     </div>
                 </div>
@@ -127,13 +127,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Sertifikatlash qoidalari
+                {% trans "Sertifikatlash qoidalari" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Sertifikatlash tartib-taomillari
+                {% trans "Sertifikatlash tartib-taomillari" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                Mahsulotlarni sertifikatlash qoidalari "PSP OS 03:2025, Boshqaruv tizimi hujjati" bilan tartibga solinadi
+                {% blocktrans %}Mahsulotlarni sertifikatlash qoidalari "PSP OS 03:2025, Boshqaruv tizimi hujjati" bilan tartibga solinadi{% endblocktrans %}
             </p>
         </div>
         
@@ -141,9 +141,9 @@
         <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 shadow-xl" data-aos="fade-up">
             <div class="grid lg:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">Huquqiy asos</h3>
+                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">{% trans "Huquqiy asos" %}</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        Mahsulotlarni sertifikatlash qoidalari O'zbekiston Respublikasi Vazirlar Mahkamasining quyidagi qarorlari asosida ishlab chiqilgan:
+                        {% trans "Mahsulotlarni sertifikatlash qoidalari O'zbekiston Respublikasi Vazirlar Mahkamasining quyidagi qarorlari asosida ishlab chiqilgan:" %}
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-start space-x-3">
@@ -152,7 +152,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">2025-yil 14-avgustdagi <strong class="text-dark dark:text-white">502-son</strong> qarori</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% blocktrans %}2025-yil 14-avgustdagi <strong class="text-dark dark:text-white">502-son</strong> qarori{% endblocktrans %}</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-secondary/10 dark:bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -160,13 +160,13 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">2004-yil 6-iyuldagi <strong class="text-dark dark:text-white">318-son</strong> qarori</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% blocktrans %}2004-yil 6-iyuldagi <strong class="text-dark dark:text-white">318-son</strong> qarori{% endblocktrans %}</span>
                         </li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">Tartibga solingan jarayonlar</h3>
+                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">{% trans "Tartibga solingan jarayonlar" %}</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -174,7 +174,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">Baholash tartib-taomillari</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% trans "Baholash tartib-taomillari" %}</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -182,7 +182,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">Muvofiqlik sertifikatini berish va tasdiqlash</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% trans "Muvofiqlik sertifikatini berish va tasdiqlash" %}</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -190,7 +190,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">Amal qilish sohasini kengaytirish yoki qisqartirish</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% trans "Amal qilish sohasini kengaytirish yoki qisqartirish" %}</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -198,7 +198,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">Sertifikatni to'xtatib turish va bekor qilish</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% trans "Sertifikatni to'xtatib turish va bekor qilish" %}</span>
                         </li>
                         <li class="flex items-start space-x-3">
                             <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -206,7 +206,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-600 dark:text-gray-400">Sertifikatlashni rad etish tartibi</span>
+                            <span class="text-gray-600 dark:text-gray-400">{% trans "Sertifikatlashni rad etish tartibi" %}</span>
                         </li>
                     </ul>
                 </div>
@@ -222,13 +222,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                To'lov tartibi
+                {% trans "To'lov tartibi" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Xizmatlar uchun to'lov
+                {% trans "Xizmatlar uchun to'lov" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                Sertifikatlashtirish organi barcha manfaatdor tomonlarga xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi
+                {% trans "Sertifikatlashtirish organi barcha manfaatdor tomonlarga xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi" %}
             </p>
         </div>
         
@@ -241,63 +241,63 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold mb-4">Teng huquqli xizmat</h3>
+                <h3 class="text-2xl font-bold mb-4">{% trans "Teng huquqli xizmat" %}</h3>
                 <p class="text-white/90 leading-relaxed mb-6">
-                    OS barcha manfaatdor tomonlarga — buyurtmachi tashkilotning hajmidan, uning har qanday uyushma yoki guruhlarga a'zoligidan, shuningdek ilgari berilgan sertifikatlar sonidan qat'i nazar — sertifikatlashtirish organi xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi.
+                    {% trans "OS barcha manfaatdor tomonlarga — buyurtmachi tashkilotning hajmidan, uning har qanday uyushma yoki guruhlarga a'zoligidan, shuningdek ilgari berilgan sertifikatlar sonidan qat'i nazar — sertifikatlashtirish organi xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi." %}
                 </p>
                 <div class="flex items-center space-x-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Belgilangan (fiksirlangan) tarif bo'yicha to'lov</span>
+                    <span>{% trans "Belgilangan (fiksirlangan) tarif bo'yicha to'lov" %}</span>
                 </div>
             </div>
             
             <!-- Services List -->
             <div class="bg-gray-50 dark:bg-gray-700 rounded-3xl p-8" data-aos="fade-left">
-                <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">To'lanadigan xizmatlar</h3>
+                <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">{% trans "To'lanadigan xizmatlar" %}</h3>
                 <ul class="space-y-4">
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">1</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Arizani ko'rib chiqish va ariza bo'yicha qaror qabul qilish</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Arizani ko'rib chiqish va ariza bo'yicha qaror qabul qilish" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">2</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Sertifikatlash ob'yektlarini aniqlash va tanlab olish</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Sertifikatlash ob'yektlarini aniqlash va tanlab olish" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">3</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Sertifikatlash ob'yektlarini sinov laboratoriyasiga yetkazib berish</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Sertifikatlash ob'yektlarini sinov laboratoriyasiga yetkazib berish" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">4</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Mahsulotni sertifikatlash bilan bog'liq barcha yozuvlarni rasmiylashtirish</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Mahsulotni sertifikatlash bilan bog'liq barcha yozuvlarni rasmiylashtirish" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">5</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Muvofiqlik sertifikatini berish</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Muvofiqlik sertifikatini berish" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <div class="w-8 h-8 bg-secondary/10 dark:bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span class="text-secondary font-bold text-sm">6</span>
                         </div>
-                        <span class="text-gray-600 dark:text-gray-400">Muvofiqlik belgisi (markasi)dan foydalanish uchun bir martalik to'lovlar (PKM 348-son, 6-band)</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Muvofiqlik belgisi (markasi)dan foydalanish uchun bir martalik to'lovlar (PKM 348-son, 6-band)" %}</span>
                     </li>
                 </ul>
                 
                 <div class="mt-8 p-4 bg-secondary/10 dark:bg-secondary/20 rounded-xl">
                     <p class="text-gray-600 dark:text-gray-400 text-sm">
-                        <strong class="text-dark dark:text-white">Eslatma:</strong> Buyurtmachi so'rovi asosida OS mahsulotni sertifikatlash xizmatlari uchun to'lov bo'yicha asoslangan tushuntirishlar bilan birga kalkulyatsiyani taqdim etishga majburdir.
+                        {% blocktrans %}<strong class="text-dark dark:text-white">Eslatma:</strong> Buyurtmachi so'rovi asosida OS mahsulotni sertifikatlash xizmatlari uchun to'lov bo'yicha asoslangan tushuntirishlar bilan birga kalkulyatsiyani taqdim etishga majburdir.{% endblocktrans %}
                     </p>
                 </div>
             </div>
@@ -312,13 +312,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Huquq va majburiyatlar
+                {% trans "Huquq va majburiyatlar" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Buyurtmachi huquq va majburiyatlari
+                {% trans "Buyurtmachi huquq va majburiyatlari" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                OS buyurtmachilar bilan yuridik kuchga ega bo'lgan kelishuv tuzadi
+                {% trans "OS buyurtmachilar bilan yuridik kuchga ega bo'lgan kelishuv tuzadi" %}
             </p>
         </div>
         
@@ -332,40 +332,40 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Kelishuv hujjati</h3>
+                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">{% trans "Kelishuv hujjati" %}</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        "Muvofiqlik sertifikatini qo'llash va muvofiqlik belgisidan foydalanish huquqini berish to'g'risidagi kelishuv" buyurtmachidan ariza kelib tushganidan so'ng tuziladi.
+                        {% blocktrans %}"Muvofiqlik sertifikatini qo'llash va muvofiqlik belgisidan foydalanish huquqini berish to'g'risidagi kelishuv" buyurtmachidan ariza kelib tushganidan so'ng tuziladi.{% endblocktrans %}
                     </p>
                     <div class="bg-gray-50 dark:bg-gray-700 rounded-xl p-4">
                         <p class="text-gray-600 dark:text-gray-400 text-sm">
-                            <strong class="text-dark dark:text-white">Ilova (RSM OS 01:F01)</strong> — unda OS hamda buyurtmachining javobgarligi ("TOMONLARNING JAVOBGARLIGI" bandi) belgilab qo'yiladi.
+                            {% blocktrans %}<strong class="text-dark dark:text-white">Ilova (RSM OS 01:F01)</strong> — unda OS hamda buyurtmachining javobgarligi ("TOMONLARNING JAVOBGARLIGI" bandi) belgilab qo'yiladi.{% endblocktrans %}
                         </p>
                     </div>
                 </div>
                 
                 <!-- Process Steps -->
                 <div>
-                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">Kelishuv tuzish tartibi</h3>
+                    <h3 class="text-2xl font-bold text-dark dark:text-white mb-6">{% trans "Kelishuv tuzish tartibi" %}</h3>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">1</div>
                             <div>
-                                <h4 class="font-semibold text-dark dark:text-white mb-1">Ariza topshirish</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Buyurtmachi sertifikatlash uchun ariza topshiradi</p>
+                                <h4 class="font-semibold text-dark dark:text-white mb-1">{% trans "Ariza topshirish" %}</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Buyurtmachi sertifikatlash uchun ariza topshiradi" %}</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">2</div>
                             <div>
-                                <h4 class="font-semibold text-dark dark:text-white mb-1">Arizani tahlil qilish</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">OS arizani ko'rib chiqadi va sinov dasturlarini tuzadi</p>
+                                <h4 class="font-semibold text-dark dark:text-white mb-1">{% trans "Arizani tahlil qilish" %}</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "OS arizani ko'rib chiqadi va sinov dasturlarini tuzadi" %}</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">3</div>
                             <div>
-                                <h4 class="font-semibold text-dark dark:text-white mb-1">Kelishuv loyihasi</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">OS kelishuv loyihasini buyurtmachiga yuboradi</p>
+                                <h4 class="font-semibold text-dark dark:text-white mb-1">{% trans "Kelishuv loyihasi" %}</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "OS kelishuv loyihasini buyurtmachiga yuboradi" %}</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -375,8 +375,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-dark dark:text-white mb-1">Kelishuv imzolanishi</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Tomonlar kelishuvni imzolaydi va jarayon boshlanadi</p>
+                                <h4 class="font-semibold text-dark dark:text-white mb-1">{% trans "Kelishuv imzolanishi" %}</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Tomonlar kelishuvni imzolaydi va jarayon boshlanadi" %}</p>
                             </div>
                         </div>
                     </div>
@@ -393,13 +393,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Shikoyatlar va apellyatsiyalar
+                {% trans "Shikoyatlar va apellyatsiyalar" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Murojaat qilish tartibi
+                {% trans "Murojaat qilish tartibi" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                Shikoyatlar va apellyatsiyalarni boshqarish "DP SM OS 04:2025" hujjati bilan tartibga solinadi
+                {% blocktrans %}Shikoyatlar va apellyatsiyalarni boshqarish "DP SM OS 04:2025" hujjati bilan tartibga solinadi{% endblocktrans %}
             </p>
         </div>
         
@@ -412,38 +412,38 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Shikoyatlar</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-6">Quyidagi holatlarda shikoyat bildirish mumkin:</p>
+                <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">{% trans "Shikoyatlar" %}</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">{% trans "Quyidagi holatlarda shikoyat bildirish mumkin:" %}</p>
                 <ul class="space-y-3">
                     <li class="flex items-start space-x-3">
                         <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-gray-400">Sertifikatlash ishlari muddatlariga rioya qilinmasligi</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Sertifikatlash ishlari muddatlariga rioya qilinmasligi" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-gray-400">Protseduralarga amal qilinmasligi</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Protseduralarga amal qilinmasligi" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-gray-400">OS xodimlarining noto'g'ri xatti-harakatlari</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "OS xodimlarining noto'g'ri xatti-harakatlari" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-gray-400">Mahsulotning normativ hujjat talablariga muvofiqligi yoki muvofiqliksizligi</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Mahsulotning normativ hujjat talablariga muvofiqligi yoki muvofiqliksizligi" %}</span>
                     </li>
                     <li class="flex items-start space-x-3">
                         <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
-                        <span class="text-gray-600 dark:text-gray-400">Muayyan standart yoki sertifikatlash tartibining qo'llanilishi</span>
+                        <span class="text-gray-600 dark:text-gray-400">{% trans "Muayyan standart yoki sertifikatlash tartibining qo'llanilishi" %}</span>
                     </li>
                 </ul>
             </div>
@@ -455,30 +455,30 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Apellyatsiyalar</h3>
+                <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">{% trans "Apellyatsiyalar" %}</h3>
                 <p class="text-gray-600 dark:text-gray-400 mb-6">
-                    Apellyatsiyalar ilgari kelib tushgan shikoyatlar bo'yicha mas'ul shaxslar tomonidan qabul qilingan qarorlar yuzasidan kelib chiqqan bahsli masalalar holatida ko'riladi.
+                    {% trans "Apellyatsiyalar ilgari kelib tushgan shikoyatlar bo'yicha mas'ul shaxslar tomonidan qabul qilingan qarorlar yuzasidan kelib chiqqan bahsli masalalar holatida ko'riladi." %}
                 </p>
                 <div class="bg-white dark:bg-gray-800 rounded-xl p-6">
-                    <h4 class="font-semibold text-dark dark:text-white mb-3">Apellyatsiya berish asoslari:</h4>
+                    <h4 class="font-semibold text-dark dark:text-white mb-3">{% trans "Apellyatsiya berish asoslari:" %}</h4>
                     <ul class="space-y-2">
                         <li class="flex items-start space-x-2">
                             <svg class="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-600 dark:text-gray-400 text-sm">Shikoyat bo'yicha qabul qilingan qarorga norozilik</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Shikoyat bo'yicha qabul qilingan qarorga norozilik" %}</span>
                         </li>
                         <li class="flex items-start space-x-2">
                             <svg class="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-600 dark:text-gray-400 text-sm">Qarorning asoslanmaganligiga da'vo</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Qarorning asoslanmaganligiga da'vo" %}</span>
                         </li>
                         <li class="flex items-start space-x-2">
                             <svg class="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-600 dark:text-gray-400 text-sm">Yangi dalillar yoki hujjatlar mavjudligi</span>
+                            <span class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Yangi dalillar yoki hujjatlar mavjudligi" %}</span>
                         </li>
                     </ul>
                 </div>
@@ -495,17 +495,17 @@
     
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
         <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Sertifikat olishni xohlaysizmi?
+            {% trans "Sertifikat olishni xohlaysizmi?" %}
         </h2>
         <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Biz bilan bog'laning — mutaxassislarimiz sizga yordam berishadi
+            {% trans "Biz bilan bog'laning — mutaxassislarimiz sizga yordam berishadi" %}
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="{% url 'core:contact' %}" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-gray-100 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
-                Ariza topshirish
+                {% trans "Ariza topshirish" %}
             </a>
             <a href="tel:+998908853030" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl transition-all duration-300">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

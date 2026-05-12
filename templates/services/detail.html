@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{ service.title }} | Special Certificate{% endblock %}
 
@@ -16,11 +16,11 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Breadcrumb -->
         <nav class="flex items-center space-x-2 text-sm text-gray-400 mb-8" data-aos="fade-up">
-            <a href="{% url 'core:home' %}" class="hover:text-white transition-colors">Bosh sahifa</a>
+            <a href="{% url 'core:home' %}" class="hover:text-white transition-colors">{% trans "Bosh sahifa" %}</a>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
-            <a href="{% url 'services:list' %}" class="hover:text-white transition-colors">Xizmatlar</a>
+            <a href="{% url 'services:list' %}" class="hover:text-white transition-colors">{% trans "Xizmatlar" %}</a>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -66,7 +66,7 @@
             <div class="lg:col-span-2" data-aos="fade-right">
                 <div class="prose prose-lg max-w-none">
                     <div class="bg-gray-50 rounded-2xl p-8 sm:p-10">
-                        <h2 class="text-2xl font-bold text-dark mb-6">Xizmat haqida</h2>
+                        <h2 class="text-2xl font-bold text-dark mb-6">{% trans "Xizmat haqida" %}</h2>
                         <div class="text-gray-600 leading-relaxed space-y-4">
                             {{ service.description|linebreaks }}
                         </div>
@@ -83,8 +83,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-dark">Sifat kafolati</h4>
-                                <p class="text-gray-500 text-sm">Akkreditatsiyalangan laboratoriya</p>
+                                <h4 class="font-semibold text-dark">{% trans "Sifat kafolati" %}</h4>
+                                <p class="text-gray-500 text-sm">{% trans "Akkreditatsiyalangan laboratoriya" %}</p>
                             </div>
                         </div>
                     </div>
@@ -97,8 +97,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-dark">Tezkor xizmat</h4>
-                                <p class="text-gray-500 text-sm">Qisqa muddatlarda</p>
+                                <h4 class="font-semibold text-dark">{% trans "Tezkor xizmat" %}</h4>
+                                <p class="text-gray-500 text-sm">{% trans "Qisqa muddatlarda" %}</p>
                             </div>
                         </div>
                     </div>
@@ -111,8 +111,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-dark">Rasmiy hujjat</h4>
-                                <p class="text-gray-500 text-sm">Davlat tomonidan tan olingan</p>
+                                <h4 class="font-semibold text-dark">{% trans "Rasmiy hujjat" %}</h4>
+                                <p class="text-gray-500 text-sm">{% trans "Davlat tomonidan tan olingan" %}</p>
                             </div>
                         </div>
                     </div>
@@ -125,8 +125,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-dark">Tajribali mutaxassislar</h4>
-                                <p class="text-gray-500 text-sm">Malakali kadrlar jamoasi</p>
+                                <h4 class="font-semibold text-dark">{% trans "Tajribali mutaxassislar" %}</h4>
+                                <p class="text-gray-500 text-sm">{% trans "Malakali kadrlar jamoasi" %}</p>
                             </div>
                         </div>
                     </div>
@@ -138,9 +138,9 @@
 
                 <!-- Contact Card -->
                 <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white sticky top-28">
-                    <h3 class="text-xl font-bold mb-4">Buyurtma berish</h3>
+                    <h3 class="text-xl font-bold mb-4">{% trans "Buyurtma berish" %}</h3>
                     <p class="text-white/80 mb-6">
-                        Ushbu xizmat bo'yicha ma'lumot olish yoki buyurtma berish uchun biz bilan bog'laning
+                        {% trans "Ushbu xizmat bo'yicha ma'lumot olish yoki buyurtma berish uchun biz bilan bog'laning" %}
                     </p>
 
                     <div class="space-y-4 mb-8">
@@ -159,13 +159,13 @@
                     </div>
 
                     <a href="{% url 'core:contact' %}" class="block w-full py-4 bg-white text-primary text-center font-semibold rounded-xl hover:bg-gray-100 transition-colors">
-                        Xabar yuborish
+                        {% trans "Xabar yuborish" %}
                     </a>
                 </div>
 
                 <!-- Other Services -->
                 <div class="mt-8 bg-gray-50 rounded-2xl p-8">
-                    <h3 class="text-lg font-bold text-dark mb-6">Boshqa xizmatlar</h3>
+                    <h3 class="text-lg font-bold text-dark mb-6">{% trans "Boshqa xizmatlar" %}</h3>
                     <div class="space-y-4">
                         {% for s in service.get_other_services|default_if_none:"" %}
                         <a href="{% url 'services:detail' s.slug %}" class="block p-4 bg-white rounded-xl hover:shadow-md transition-shadow">
@@ -176,7 +176,7 @@
                         {% endfor %}
                     </div>
                     <a href="{% url 'services:list' %}" class="inline-flex items-center text-secondary font-medium mt-6 hover:text-primary transition-colors">
-                        Barcha xizmatlar
+                        {% trans "Barcha xizmatlar" %}
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>

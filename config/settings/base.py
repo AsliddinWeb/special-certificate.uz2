@@ -25,6 +25,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,9 +41,15 @@ INSTALLED_APPS = [
     'apps.news',
 ]
 
+# django-modeltranslation
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+MODELTRANSLATION_LANGUAGES = ('uz', 'ru')
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('uz', 'ru')
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -59,6 +67,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
+                'django.template.context_processors.i18n',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -91,11 +100,23 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
+from django.utils.translation import gettext_lazy as _
+
 LANGUAGE_CODE = 'uz'
+
+LANGUAGES = [
+    ('uz', _('Uzbek')),
+    ('ru', _('Russian')),
+]
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, '../locale'),
+]
 
 TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
+USE_L10N = True
 
 USE_TZ = True
 

@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Sinov laboratoriyasi | Special Certificate{% endblock %}
+{% block title %}{% trans "Sinov laboratoriyasi" %} | Special Certificate{% endblock %}
 
-{% block meta_description %}Special Certificate sinov laboratoriyasi - qurilish materiallarini sinash xizmatlari{% endblock %}
+{% block meta_description %}{% trans "Special Certificate sinov laboratoriyasi - qurilish materiallarini sinash xizmatlari" %}{% endblock %}
 
 {% block content %}
 
@@ -15,13 +15,13 @@
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium mb-6" data-aos="fade-up">
-            Sinov laboratoriyasi
+            {% trans "Sinov laboratoriyasi" %}
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-            Qurilish va kimyo maxsulotlarini sinash
+            {% trans "Qurilish va kimyo maxsulotlarini sinash" %}
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Zamonaviy uskunalar va malakali xodimlar bilan ta'minlangan labaratoriyamizda qurilish va kimyo maxsulotlarining standart talablariga asosan sinov o'tkaziladi
+            {% trans "Zamonaviy uskunalar va malakali xodimlar bilan ta'minlangan labaratoriyamizda qurilish va kimyo maxsulotlarining standart talablariga asosan sinov o'tkaziladi" %}
         </p>
     </div>
 </section>
@@ -68,15 +68,15 @@
                                  x-transition:leave-start="opacity-100 transform scale-100"
                                  x-transition:leave-end="opacity-0 transform scale-95"
                                  class="absolute inset-0">
-                                <img :src="slide" alt="Sinov laboratoriyasi" class="w-full h-full object-cover">
+                                <img :src="slide" alt="{% trans 'Sinov laboratoriyasi' %}" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                             </div>
                         </template>
 
                         <!-- Text Overlay -->
                         <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <h3 class="text-2xl font-bold mb-2">Sinov laboratoriyasi</h3>
-                            <p class="text-white/80">Akkreditatsiyadan o'tgan</p>
+                            <h3 class="text-2xl font-bold mb-2">{% trans "Sinov laboratoriyasi" %}</h3>
+                            <p class="text-white/80">{% trans "Akkreditatsiyadan o'tgan" %}</p>
                         </div>
 
                         <!-- Slide Indicators -->
@@ -100,7 +100,7 @@
                         </div>
                         <div>
                             <div class="font-bold text-dark dark:text-white">200+</div>
-                            <div class="text-sm text-gray-500 dark:text-gray-400">Sinov uskunalari</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">{% trans "Sinov uskunalari" %}</div>
                         </div>
                     </div>
                 </div>
@@ -109,13 +109,13 @@
             <!-- Content -->
             <div data-aos="fade-left">
                 <span class="inline-block px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold mb-4">
-                    Laboratoriya haqida
+                    {% trans "Laboratoriya haqida" %}
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-6">
-                    Zamonaviy sinov laboratoriyasi
+                    {% trans "Zamonaviy sinov laboratoriyasi" %}
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    Sinov laboratoriyamiz "O'zbekiston akkreditatsiya markazi" DM tomonidan akkreditatsiyadan o'tgan.
+                    {% trans "Sinov laboratoriyamiz \"O'zbekiston akkreditatsiya markazi\" DM tomonidan akkreditatsiyadan o'tgan." %}
                 </p>
 
                 <!-- Features -->
@@ -126,7 +126,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <span class="text-gray-700 dark:text-gray-300 font-medium">Zamonaviy uskunalar</span>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium">{% trans "Zamonaviy uskunalar" %}</span>
                     </div>
                     <div class="flex items-center space-x-3 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -134,7 +134,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <span class="text-gray-700 dark:text-gray-300 font-medium">Malakali mutaxassislar</span>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium">{% trans "Malakali mutaxassislar" %}</span>
                     </div>
                     <div class="flex items-center space-x-3 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -142,7 +142,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <span class="text-gray-700 dark:text-gray-300 font-medium">Aniq natijalar</span>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium">{% trans "Aniq natijalar" %}</span>
                     </div>
                     <div class="flex items-center space-x-3 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -150,7 +150,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <span class="text-gray-700 dark:text-gray-300 font-medium">Sifatli xizmat</span>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium">{% trans "Sifatli xizmat" %}</span>
                     </div>
                 </div>
             </div>
@@ -165,13 +165,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Sinov xizmatlari
+                {% trans "Sinov xizmatlari" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Sinovdan o'tkaziladigan materiallar
+                {% trans "Sinovdan o'tkaziladigan materiallar" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                Laboratoriyamizda quyidagi qurilish materiallarini sinashingiz mumkin
+                {% trans "Laboratoriyamizda quyidagi qurilish materiallarini sinashingiz mumkin" %}
             </p>
         </div>
         
@@ -185,44 +185,44 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
             </div>
-            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Qurilish maxsulotlari</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">Sinovdan o'tkazilayotgan ob'ekt nomi</p>
+            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">{% trans "Qurilish maxsulotlari" %}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">{% trans "Sinovdan o'tkazilayotgan ob'ekt nomi" %}</p>
             <ul class="space-y-3 text-gray-500 dark:text-gray-400">
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Qurilish ishlari uchun qum</span>
+                    <span>{% trans "Qurilish ishlari uchun qum" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Qurilish ishlari uchun shag'al va mayda tosh</span>
+                    <span>{% trans "Qurilish ishlari uchun shag'al va mayda tosh" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Betonlar</span>
+                    <span>{% trans "Betonlar" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Gruntlar (tuproqlar)</span>
+                    <span>{% trans "Gruntlar (tuproqlar)" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Sementlar</span>
+                    <span>{% trans "Sementlar" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Asfaltbeton aralashmalari</span>
+                    <span>{% trans "Asfaltbeton aralashmalari" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -240,44 +240,44 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
                 </svg>
             </div>
-            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">Kimyo maxsulotlari</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">Sinovdan o'tkazilayotgan ob'ekt nomi</p>
+            <h3 class="text-2xl font-bold text-dark dark:text-white mb-4">{% trans "Kimyo maxsulotlari" %}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">{% trans "Sinovdan o'tkazilayotgan ob'ekt nomi" %}</p>
             <ul class="space-y-3 text-gray-500 dark:text-gray-400">
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Tabiiy gaz (yoqilg'i siqilgan gaz, magistral gaz)</span>
+                    <span>{% trans "Tabiiy gaz (yoqilg'i siqilgan gaz, magistral gaz)" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Suyultirilgan uglevodorod gazlari</span>
+                    <span>{% trans "Suyultirilgan uglevodorod gazlari" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Barqaror gaz kondensati</span>
+                    <span>{% trans "Barqaror gaz kondensati" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Suyuq kimyoviy mahsulotlar</span>
+                    <span>{% trans "Suyuq kimyoviy mahsulotlar" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Ichimlik suvi</span>
+                    <span>{% trans "Ichimlik suvi" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span>Bo'r</span>
+                    <span>{% trans "Bo'r" %}</span>
                 </li>
                 <li class="flex items-center space-x-3">
                     <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,13 +298,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Laboratoriya uskunalari
+                {% trans "Laboratoriya uskunalari" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Zamonaviy jihozlar
+                {% trans "Zamonaviy jihozlar" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                Laboratoriyamiz eng zamonaviy va aniq natija beradigan uskunalar bilan jihozlangan
+                {% trans "Laboratoriyamiz eng zamonaviy va aniq natija beradigan uskunalar bilan jihozlangan" %}
             </p>
         </div>
         
@@ -317,8 +317,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-dark dark:text-white mb-2">Gidravlik presslar</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Beton va temir-beton mustahkamligini aniqlash</p>
+                <h3 class="font-bold text-dark dark:text-white mb-2">{% trans "Gidravlik presslar" %}</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Beton va temir-beton mustahkamligini aniqlash" %}</p>
             </div>
             
             <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 text-center" data-aos="fade-up" data-aos-delay="150">
@@ -327,8 +327,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-dark dark:text-white mb-2">Tarozilar</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Yuqori aniqlikdagi elektron tarozilar</p>
+                <h3 class="font-bold text-dark dark:text-white mb-2">{% trans "Tarozilar" %}</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Yuqori aniqlikdagi elektron tarozilar" %}</p>
             </div>
             
             <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -337,8 +337,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-dark dark:text-white mb-2">Quritgich shkaflar</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Namlik darajasini aniqlash uchun</p>
+                <h3 class="font-bold text-dark dark:text-white mb-2">{% trans "Quritgich shkaflar" %}</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Namlik darajasini aniqlash uchun" %}</p>
             </div>
             
             <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 text-center" data-aos="fade-up" data-aos-delay="250">
@@ -347,8 +347,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
                     </svg>
                 </div>
-                <h3 class="font-bold text-dark dark:text-white mb-2">Elaklar to'plami</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">Granulometrik tahlil uchun</p>
+                <h3 class="font-bold text-dark dark:text-white mb-2">{% trans "Elaklar to'plami" %}</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">{% trans "Granulometrik tahlil uchun" %}</p>
             </div>
         </div>
     </div>
@@ -364,19 +364,19 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div data-aos="fade-up" data-aos-delay="100">
                 <div class="text-4xl sm:text-5xl font-bold text-white mb-2">50+</div>
-                <div class="text-white/80">Sinov uskunalari</div>
+                <div class="text-white/80">{% trans "Sinov uskunalari" %}</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="200">
                 <div class="text-4xl sm:text-5xl font-bold text-white mb-2">10+</div>
-                <div class="text-white/80">Mutaxassislar</div>
+                <div class="text-white/80">{% trans "Mutaxassislar" %}</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="300">
                 <div class="text-4xl sm:text-5xl font-bold text-white mb-2">5000+</div>
-                <div class="text-white/80">Sinovlar</div>
+                <div class="text-white/80">{% trans "Sinovlar" %}</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
                 <div class="text-4xl sm:text-5xl font-bold text-white mb-2">99%</div>
-                <div class="text-white/80">Aniqlik darajasi</div>
+                <div class="text-white/80">{% trans "Aniqlik darajasi" %}</div>
             </div>
         </div>
     </div>
@@ -392,17 +392,17 @@
             
             <div class="relative">
                 <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-                    Maxsulotlaringizni sinatmoqchimisiz?
+                    {% trans "Maxsulotlaringizni sinatmoqchimisiz?" %}
                 </h2>
                 <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-                    Biz bilan bog'laning — namunalarni qabul qilamiz va natijalarni taqdim etamiz
+                    {% trans "Biz bilan bog'laning — namunalarni qabul qilamiz va natijalarni taqdim etamiz" %}
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="{% url 'core:contact' %}" class="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 hover:bg-gray-100 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        Ariza topshirish
+                        {% trans "Ariza topshirish" %}
                     </a>
                     <a href="tel:+998908853030" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl transition-all duration-300">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

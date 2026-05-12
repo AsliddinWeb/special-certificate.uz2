@@ -2,11 +2,12 @@
 
 from django.contrib import admin
 from django.utils.html import format_html
+from modeltranslation.admin import TranslationAdmin
 from .models import Category, News
 
 
 @admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslationAdmin):
     list_display = ['name', 'slug', 'news_count', 'is_active', 'order']
     list_editable = ['is_active', 'order']
     list_filter = ['is_active']
@@ -16,7 +17,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 @admin.register(News)
-class NewsAdmin(admin.ModelAdmin):
+class NewsAdmin(TranslationAdmin):
     list_display = ['title', 'category', 'image_preview', 'is_active', 'is_featured', 'views', 'created_at']
     list_editable = ['is_active', 'is_featured']
     list_filter = ['is_active', 'is_featured', 'category', 'created_at']

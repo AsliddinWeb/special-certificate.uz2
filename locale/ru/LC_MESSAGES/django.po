@@ -1,0 +1,1884 @@
+# Russian translation for Special Certificate.
+# Copyright (C) 2026
+# This file is distributed under the same license as the project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: special-certificate 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 00:45+0500\n"
+"PO-Revision-Date: 2026-05-12 17:00+0500\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps/core/forms.py:13 templates/core/contact.html:171
+msgid "Ismingiz"
+msgstr "Ваше имя"
+
+#: apps/core/forms.py:25 templates/core/contact.html:222
+msgid "Xabaringizni yozing..."
+msgstr "Напишите ваше сообщение..."
+
+#: apps/core/views.py:47
+msgid "Xabaringiz muvaffaqiyatli yuborildi!"
+msgstr "Ваше сообщение успешно отправлено!"
+
+#: config/settings/base.py:108
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: config/settings/base.py:109
+msgid "Russian"
+msgstr "Русский"
+
+#: templates/base.html:8 templates/core/about.html:24
+msgid "Sertifikatlashtirish organi va Sinov laboratoriyasi"
+msgstr "Орган по сертификации и Испытательная лаборатория"
+
+#: templates/components/footer.html:15
+msgid "Sertifikatlashtirish organi va Sinov laboratoriyasi."
+msgstr "Орган по сертификации и Испытательная лаборатория."
+
+#: templates/components/footer.html:21
+msgid "Tezkor havolalar"
+msgstr "Быстрые ссылки"
+
+#: templates/components/footer.html:24 templates/components/navbar.html:17
+#: templates/components/navbar.html:55 templates/core/home.html:4
+#: templates/services/detail.html:19
+msgid "Bosh sahifa"
+msgstr "Главная"
+
+#: templates/components/footer.html:27 templates/components/navbar.html:20
+#: templates/components/navbar.html:61 templates/core/about.html:4
+#: templates/core/about.html:21 templates/core/about.html:37
+#: templates/core/about.html:59 templates/core/certification-body-pro.html:37
+#: templates/core/home.html:157 templates/core/home.html:174
+msgid "Biz haqimizda"
+msgstr "О нас"
+
+#: templates/components/footer.html:30 templates/components/hero.html:65
+#: templates/components/navbar.html:23 templates/components/navbar.html:67
+#: templates/services/detail.html:23 templates/services/list.html:4
+#: templates/services/list.html:21
+msgid "Xizmatlar"
+msgstr "Услуги"
+
+#: templates/components/footer.html:33 templates/components/hero.html:59
+#: templates/components/navbar.html:29 templates/components/navbar.html:82
+#: templates/core/about.html:185 templates/core/contact.html:4
+#: templates/core/contact.html:21
+msgid "Bog'lanish"
+msgstr "Контакты"
+
+#: templates/components/footer.html:40 templates/core/contact.html:18
+msgid "Aloqa"
+msgstr "Связь"
+
+#: templates/components/footer.html:44 templates/core/contact.html:59
+#: templates/core/contact.html:287
+msgid "Qarshi shahri, Katta bog' ko'chasi, 13B"
+msgstr "г. Карши, ул. Катта боғ, 13Б"
+
+#: templates/components/footer.html:59 templates/core/contact.html:109
+msgid "Ish vaqti"
+msgstr "Рабочее время"
+
+#: templates/components/footer.html:62
+msgid "Dushanba – Juma"
+msgstr "Понедельник – Пятница"
+
+#: templates/components/footer.html:66
+msgid "Shanba"
+msgstr "Суббота"
+
+#: templates/components/footer.html:70
+msgid "Yakshanba"
+msgstr "Воскресенье"
+
+#: templates/components/footer.html:71
+msgid "Dam olish"
+msgstr "Выходной"
+
+#: templates/components/footer.html:77 templates/core/contact.html:118
+msgid "Ijtimoiy tarmoqlar"
+msgstr "Социальные сети"
+
+#: templates/components/footer.html:97
+msgid "Barcha huquqlar himoyalangan."
+msgstr "Все права защищены."
+
+#: templates/components/footer.html:100
+msgid "Qashqadaryo viloyati, Qarshi shahri"
+msgstr "Кашкадарьинская область, г. Карши"
+
+#: templates/components/hero.html:26
+#: templates/core/certification-body-pro.html:4
+#: templates/core/certification-body-pro.html:18
+#: templates/core/certification-body-pro.html:40
+#: templates/core/certification-body-pro.html:98
+#: templates/core/certification-body.html:4
+#: templates/core/certification-body.html:18 templates/core/home.html:537
+msgid "Sertifikatlashtirish organi"
+msgstr "Орган по сертификации"
+
+#: templates/components/hero.html:35 templates/components/hero.html:142
+#: templates/core/home.html:557 templates/core/testing-laboratory.html:4
+#: templates/core/testing-laboratory.html:18
+#: templates/core/testing-laboratory.html:71
+#: templates/core/testing-laboratory.html:78
+msgid "Sinov laboratoriyasi"
+msgstr "Испытательная лаборатория"
+
+#: templates/components/hero.html:50
+msgid ""
+"Qurilish materiallarini sertifikatlashtirish va sinov xizmatlari. Sifat "
+"kafolati bilan ishonchli hamkorlik."
+msgstr ""
+"Услуги по сертификации и испытанию строительных материалов. Надёжное "
+"сотрудничество с гарантией качества."
+
+#: templates/components/hero.html:73 templates/core/about.html:75
+#: templates/core/home.html:164 templates/core/home.html:601
+msgid "Yillik tajriba"
+msgstr "Лет опыта"
+
+#: templates/components/hero.html:77 templates/core/about.html:79
+#: templates/core/home.html:605
+msgid "Mijozlar"
+msgstr "Клиентов"
+
+#: templates/components/hero.html:81 templates/core/about.html:83
+#: templates/core/home.html:609
+msgid "Sinov Bayonnomalari"
+msgstr "Протоколов испытаний"
+
+#: templates/components/hero.html:141 templates/core/about.html:49
+msgid "Akkreditlangan"
+msgstr "Аккредитована"
+
+#: templates/components/hero.html:154
+msgid "Pastga"
+msgstr "Вниз"
+
+#: templates/components/navbar.html:26 templates/components/navbar.html:73
+#: templates/gallery/index.html:4 templates/gallery/index.html:19
+msgid "Galereya"
+msgstr "Галерея"
+
+#: templates/components/navbar.html:37
+msgid "Menyu"
+msgstr "Меню"
+
+#: templates/components/topbar.html:37
+msgid "Qarshi sh., Katta bog' ko'chasi, 13B"
+msgstr "г. Карши, ул. Катта боғ, 13Б"
+
+#: templates/components/topbar.html:44
+msgid "Tungi rejim"
+msgstr "Ночной режим"
+
+#: templates/core/about.html:6
+msgid ""
+"Special Certificate - Sertifikatlashtirish organi va Sinov laboratoriyasi "
+"haqida ma'lumot"
+msgstr ""
+"Special Certificate — информация об органе по сертификации и испытательной "
+"лаборатории"
+
+#: templates/core/about.html:18
+msgid "Kompaniya haqida"
+msgstr "О компании"
+
+#: templates/core/about.html:50
+msgid "Sinov labaratoriyasi"
+msgstr "Испытательная лаборатория"
+
+#: templates/core/about.html:65
+msgid ""
+"<strong class=\"text-secondary dark:text-white\">Special Certificate</"
+"strong> sertifikatlashtirish organi va sinov laboratoriyasi sifatida "
+"faoliyat yuritadi. Biz qurilish materiallari va kimyo maxsulotlarini sinash "
+"va sertifikatlashtirish bo'yicha keng qamrovli xizmatlar ko'rsatamiz."
+msgstr ""
+"<strong class=\"text-secondary dark:text-white\">Special Certificate</"
+"strong> работает как орган по сертификации и испытательная лаборатория. Мы "
+"оказываем комплексные услуги по испытанию и сертификации строительных "
+"материалов и химической продукции."
+
+#: templates/core/about.html:68 templates/core/home.html:183
+msgid ""
+"Malakali mutaxassislar jamoasi, zamonaviy laboratoriya uskunalari va <span "
+"class=\"text-secondary\">akkreditatsiya</span> guvohnomasi bizning sifat "
+"kafolatimizdir."
+msgstr ""
+"Команда квалифицированных специалистов, современное лабораторное "
+"оборудование и свидетельство <span class=\"text-secondary\">аккредитации</"
+"span> — это наша гарантия качества."
+
+#: templates/core/about.html:98
+msgid "Bizning resurslar"
+msgstr "Наши ресурсы"
+
+#: templates/core/about.html:101
+msgid "Nima uchun aynan biz?"
+msgstr "Почему именно мы?"
+
+#: templates/core/about.html:104
+msgid ""
+"Sertifikatlashtirish va sinov xizmatlarini yuqori sifatda ko'rsatish uchun "
+"barcha imkoniyatlarga egamiz"
+msgstr ""
+"Мы располагаем всеми возможностями для оказания услуг сертификации и "
+"испытаний на высоком уровне"
+
+#: templates/core/about.html:118 templates/core/home.html:536
+#: templates/core/home.html:556
+msgid "Akkreditatsiya guvohnomasi"
+msgstr "Свидетельство об аккредитации"
+
+#: templates/core/about.html:120
+msgid ""
+"“O‘zbekiston akkreditatsiya markazi” DM tomonidan berilgan akkreditatsiya "
+"guvohnomasi"
+msgstr ""
+"Свидетельство об аккредитации, выданное ГУ «Узбекский центр аккредитации»"
+
+#: templates/core/about.html:132
+msgid "Eng so'nggi zamonaviy uskunalar"
+msgstr "Новейшее современное оборудование"
+
+#: templates/core/about.html:134
+msgid ""
+"Yuqori aniqlikdagi o'lchov va sinov uskunalari, xorijiy analoglardan kam "
+"bo'lmagan sifat"
+msgstr ""
+"Высокоточное измерительное и испытательное оборудование — качество не "
+"уступает зарубежным аналогам"
+
+#: templates/core/about.html:145
+msgid "Sinovlarning aniqligi"
+msgstr "Точность испытаний"
+
+#: templates/core/about.html:147
+msgid ""
+"So'nggi rusumdagi sinov uskunalari va malakali xodimlar tomonidan sinalgan "
+"maxsulotlarning natijalari aniqligi"
+msgstr ""
+"Точность результатов продукции, испытанной новейшим оборудованием и "
+"квалифицированным персоналом"
+
+#: templates/core/about.html:158
+msgid "Malakali kadrlar"
+msgstr "Квалифицированные кадры"
+
+#: templates/core/about.html:160
+msgid ""
+"Sertifikatlashtirish va sinov sohasida tegishli tajriba va ish stajiga ega "
+"mutaxassislar jamoasi"
+msgstr ""
+"Команда специалистов с соответствующим опытом и стажем работы в сфере "
+"сертификации и испытаний"
+
+#: templates/core/about.html:175
+msgid "Savollaringiz bormi?"
+msgstr "У вас есть вопросы?"
+
+#: templates/core/about.html:178
+msgid ""
+"Biz bilan bog'laning — mutaxassislarimiz barcha savollarga javob berishadi"
+msgstr "Свяжитесь с нами — наши специалисты ответят на все ваши вопросы"
+
+#: templates/core/certification-body-pro.html:6
+msgid ""
+"Special Certificate sertifikatlashtirish organi - qurilish mahsulotlarini "
+"sertifikatlash xizmatlari"
+msgstr ""
+"Орган по сертификации Special Certificate — услуги по сертификации "
+"строительной продукции"
+
+#: templates/core/certification-body-pro.html:21
+#: templates/core/certification-body.html:21
+msgid "Mahsulotlarni sertifikatlashtirish"
+msgstr "Сертификация продукции"
+
+#: templates/core/certification-body-pro.html:24
+msgid ""
+"\"SPECIAL CERTIFICATE\" MCHJ qoshidagi mahsulot sertifikatlash organi "
+"qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida "
+"tashkil etilgan"
+msgstr ""
+"Орган по сертификации продукции при ООО «SPECIAL CERTIFICATE» создан с целью "
+"оказания услуг по сертификации строительной продукции"
+
+#: templates/core/certification-body-pro.html:43
+msgid ""
+"\"SPECIAL CERTIFICATE\" MCHJ qoshidagi mahsulot sertifikatlash organi "
+"qurilish mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida "
+"tashkil etilgan."
+msgstr ""
+"Орган по сертификации продукции при ООО «SPECIAL CERTIFICATE» создан с целью "
+"оказания услуг по сертификации строительной продукции."
+
+#: templates/core/certification-body-pro.html:46
+msgid ""
+"Biz O'zbekiston Respublikasi Vazirlar Mahkamasining qarorlari asosida "
+"faoliyat yuritamiz va barcha manfaatdor tomonlarga teng huquqli xizmat "
+"ko'rsatamiz."
+msgstr ""
+"Мы осуществляем деятельность на основании постановлений Кабинета Министров "
+"Республики Узбекистан и оказываем услуги всем заинтересованным сторонам на "
+"равных условиях."
+
+#: templates/core/certification-body-pro.html:59
+msgid "Yuridik manzil"
+msgstr "Юридический адрес"
+
+#: templates/core/certification-body-pro.html:60
+#: templates/core/certification-body.html:44
+msgid ""
+"O'zbekiston, 180100, Qashqadaryo viloyati, Qarshi shahri, Katta bog' "
+"ko'chasi, 13B"
+msgstr ""
+"Узбекистан, 180100, Кашкадарьинская область, г. Карши, ул. Катта боғ, 13Б"
+
+#: templates/core/certification-body-pro.html:70 templates/core/contact.html:77
+msgid "Telefon"
+msgstr "Телефон"
+
+#: templates/core/certification-body-pro.html:81
+msgid "Elektron pochta"
+msgstr "Электронная почта"
+
+#: templates/core/certification-body-pro.html:99
+#: templates/core/testing-laboratory.html:79
+msgid "Akkreditatsiyadan o'tgan"
+msgstr "Прошёл аккредитацию"
+
+#: templates/core/certification-body-pro.html:113
+msgid "Akkreditatsiya"
+msgstr "Аккредитация"
+
+#: templates/core/certification-body-pro.html:114
+msgid "Tasdiqlangan"
+msgstr "Подтверждён"
+
+#: templates/core/certification-body-pro.html:130
+msgid "Sertifikatlash qoidalari"
+msgstr "Правила сертификации"
+
+#: templates/core/certification-body-pro.html:133
+msgid "Sertifikatlash tartib-taomillari"
+msgstr "Процедуры сертификации"
+
+#: templates/core/certification-body-pro.html:136
+msgid ""
+"Mahsulotlarni sertifikatlash qoidalari \"PSP OS 03:2025, Boshqaruv tizimi "
+"hujjati\" bilan tartibga solinadi"
+msgstr ""
+"Правила сертификации продукции регулируются документом «ПСП ОС 03:2025, "
+"Документ системы менеджмента»"
+
+#: templates/core/certification-body-pro.html:144
+msgid "Huquqiy asos"
+msgstr "Правовая основа"
+
+#: templates/core/certification-body-pro.html:146
+msgid ""
+"Mahsulotlarni sertifikatlash qoidalari O'zbekiston Respublikasi Vazirlar "
+"Mahkamasining quyidagi qarorlari asosida ishlab chiqilgan:"
+msgstr ""
+"Правила сертификации продукции разработаны на основании следующих "
+"постановлений Кабинета Министров Республики Узбекистан:"
+
+#: templates/core/certification-body-pro.html:155
+msgid ""
+"2025-yil 14-avgustdagi <strong class=\"text-dark dark:text-white\">502-son</"
+"strong> qarori"
+msgstr ""
+"Постановление <strong class=\"text-dark dark:text-white\">№502</strong> от "
+"14 августа 2025 года"
+
+#: templates/core/certification-body-pro.html:163
+msgid ""
+"2004-yil 6-iyuldagi <strong class=\"text-dark dark:text-white\">318-son</"
+"strong> qarori"
+msgstr ""
+"Постановление <strong class=\"text-dark dark:text-white\">№318</strong> от 6 "
+"июля 2004 года"
+
+#: templates/core/certification-body-pro.html:169
+msgid "Tartibga solingan jarayonlar"
+msgstr "Регулируемые процессы"
+
+#: templates/core/certification-body-pro.html:177
+msgid "Baholash tartib-taomillari"
+msgstr "Процедуры оценки"
+
+#: templates/core/certification-body-pro.html:185
+msgid "Muvofiqlik sertifikatini berish va tasdiqlash"
+msgstr "Выдача и подтверждение сертификата соответствия"
+
+#: templates/core/certification-body-pro.html:193
+msgid "Amal qilish sohasini kengaytirish yoki qisqartirish"
+msgstr "Расширение или сокращение области действия"
+
+#: templates/core/certification-body-pro.html:201
+msgid "Sertifikatni to'xtatib turish va bekor qilish"
+msgstr "Приостановление и аннулирование сертификата"
+
+#: templates/core/certification-body-pro.html:209
+msgid "Sertifikatlashni rad etish tartibi"
+msgstr "Порядок отказа в сертификации"
+
+#: templates/core/certification-body-pro.html:225
+msgid "To'lov tartibi"
+msgstr "Порядок оплаты"
+
+#: templates/core/certification-body-pro.html:228
+msgid "Xizmatlar uchun to'lov"
+msgstr "Оплата за услуги"
+
+#: templates/core/certification-body-pro.html:231
+msgid ""
+"Sertifikatlashtirish organi barcha manfaatdor tomonlarga xizmatlaridan teng "
+"foydalanish imkoniyatini ta'minlaydi"
+msgstr ""
+"Орган по сертификации обеспечивает всем заинтересованным сторонам равный "
+"доступ к своим услугам"
+
+#: templates/core/certification-body-pro.html:244
+msgid "Teng huquqli xizmat"
+msgstr "Равное обслуживание"
+
+#: templates/core/certification-body-pro.html:246
+msgid ""
+"OS barcha manfaatdor tomonlarga — buyurtmachi tashkilotning hajmidan, uning "
+"har qanday uyushma yoki guruhlarga a'zoligidan, shuningdek ilgari berilgan "
+"sertifikatlar sonidan qat'i nazar — sertifikatlashtirish organi "
+"xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi."
+msgstr ""
+"ОС обеспечивает всем заинтересованным сторонам — независимо от размера "
+"организации заказчика, его членства в каких-либо ассоциациях или группах, а "
+"также количества ранее выданных сертификатов — равный доступ к услугам "
+"органа по сертификации."
+
+#: templates/core/certification-body-pro.html:252
+msgid "Belgilangan (fiksirlangan) tarif bo'yicha to'lov"
+msgstr "Оплата по установленному (фиксированному) тарифу"
+
+#: templates/core/certification-body-pro.html:258
+msgid "To'lanadigan xizmatlar"
+msgstr "Платные услуги"
+
+#: templates/core/certification-body-pro.html:264
+msgid "Arizani ko'rib chiqish va ariza bo'yicha qaror qabul qilish"
+msgstr "Рассмотрение заявки и принятие решения по заявке"
+
+#: templates/core/certification-body-pro.html:270
+msgid "Sertifikatlash ob'yektlarini aniqlash va tanlab olish"
+msgstr "Идентификация и отбор объектов сертификации"
+
+#: templates/core/certification-body-pro.html:276
+msgid "Sertifikatlash ob'yektlarini sinov laboratoriyasiga yetkazib berish"
+msgstr "Доставка объектов сертификации в испытательную лабораторию"
+
+#: templates/core/certification-body-pro.html:282
+msgid ""
+"Mahsulotni sertifikatlash bilan bog'liq barcha yozuvlarni rasmiylashtirish"
+msgstr "Оформление всех записей, связанных с сертификацией продукции"
+
+#: templates/core/certification-body-pro.html:288
+#: templates/core/certification-body.html:201
+msgid "Muvofiqlik sertifikatini berish"
+msgstr "Выдача сертификата соответствия"
+
+#: templates/core/certification-body-pro.html:294
+msgid ""
+"Muvofiqlik belgisi (markasi)dan foydalanish uchun bir martalik to'lovlar "
+"(PKM 348-son, 6-band)"
+msgstr ""
+"Разовые платежи за использование знака (марки) соответствия (ПКМ №348, пункт "
+"6)"
+
+#: templates/core/certification-body-pro.html:300
+msgid ""
+"<strong class=\"text-dark dark:text-white\">Eslatma:</strong> Buyurtmachi "
+"so'rovi asosida OS mahsulotni sertifikatlash xizmatlari uchun to'lov "
+"bo'yicha asoslangan tushuntirishlar bilan birga kalkulyatsiyani taqdim "
+"etishga majburdir."
+msgstr ""
+"<strong class=\"text-dark dark:text-white\">Примечание:</strong> По запросу "
+"заказчика ОС обязан предоставить калькуляцию по оплате услуг сертификации "
+"продукции с обоснованными пояснениями."
+
+#: templates/core/certification-body-pro.html:315
+msgid "Huquq va majburiyatlar"
+msgstr "Права и обязанности"
+
+#: templates/core/certification-body-pro.html:318 templates/core/home.html:363
+msgid "Buyurtmachi huquq va majburiyatlari"
+msgstr "Права и обязанности заказчика"
+
+#: templates/core/certification-body-pro.html:321
+msgid "OS buyurtmachilar bilan yuridik kuchga ega bo'lgan kelishuv tuzadi"
+msgstr "ОС заключает с заказчиками юридически обязательное соглашение"
+
+#: templates/core/certification-body-pro.html:335
+msgid "Kelishuv hujjati"
+msgstr "Документ соглашения"
+
+#: templates/core/certification-body-pro.html:337
+msgid ""
+"\"Muvofiqlik sertifikatini qo'llash va muvofiqlik belgisidan foydalanish "
+"huquqini berish to'g'risidagi kelishuv\" buyurtmachidan ariza kelib "
+"tushganidan so'ng tuziladi."
+msgstr ""
+"«Соглашение о применении сертификата соответствия и предоставлении права "
+"использования знака соответствия» заключается после поступления заявки от "
+"заказчика."
+
+#: templates/core/certification-body-pro.html:341
+msgid ""
+"<strong class=\"text-dark dark:text-white\">Ilova (RSM OS 01:F01)</strong> — "
+"unda OS hamda buyurtmachining javobgarligi (\"TOMONLARNING JAVOBGARLIGI\" "
+"bandi) belgilab qo'yiladi."
+msgstr ""
+"<strong class=\"text-dark dark:text-white\">Приложение (РСМ ОС 01:F01)</"
+"strong> — в нём устанавливается ответственность ОС и заказчика (пункт "
+"«ОТВЕТСТВЕННОСТЬ СТОРОН»)."
+
+#: templates/core/certification-body-pro.html:348
+msgid "Kelishuv tuzish tartibi"
+msgstr "Порядок заключения соглашения"
+
+#: templates/core/certification-body-pro.html:353
+#: templates/core/certification-body-pro.html:508
+#: templates/core/certification-body.html:447
+#: templates/core/testing-laboratory.html:405
+msgid "Ariza topshirish"
+msgstr "Подать заявку"
+
+#: templates/core/certification-body-pro.html:354
+msgid "Buyurtmachi sertifikatlash uchun ariza topshiradi"
+msgstr "Заказчик подаёт заявку на сертификацию"
+
+#: templates/core/certification-body-pro.html:360
+msgid "Arizani tahlil qilish"
+msgstr "Анализ заявки"
+
+#: templates/core/certification-body-pro.html:361
+msgid "OS arizani ko'rib chiqadi va sinov dasturlarini tuzadi"
+msgstr "ОС рассматривает заявку и составляет программы испытаний"
+
+#: templates/core/certification-body-pro.html:367
+msgid "Kelishuv loyihasi"
+msgstr "Проект соглашения"
+
+#: templates/core/certification-body-pro.html:368
+msgid "OS kelishuv loyihasini buyurtmachiga yuboradi"
+msgstr "ОС направляет проект соглашения заказчику"
+
+#: templates/core/certification-body-pro.html:378
+msgid "Kelishuv imzolanishi"
+msgstr "Подписание соглашения"
+
+#: templates/core/certification-body-pro.html:379
+msgid "Tomonlar kelishuvni imzolaydi va jarayon boshlanadi"
+msgstr "Стороны подписывают соглашение и процесс начинается"
+
+#: templates/core/certification-body-pro.html:396
+msgid "Shikoyatlar va apellyatsiyalar"
+msgstr "Жалобы и апелляции"
+
+#: templates/core/certification-body-pro.html:399
+msgid "Murojaat qilish tartibi"
+msgstr "Порядок обращения"
+
+#: templates/core/certification-body-pro.html:402
+msgid ""
+"Shikoyatlar va apellyatsiyalarni boshqarish \"DP SM OS 04:2025\" hujjati "
+"bilan tartibga solinadi"
+msgstr ""
+"Управление жалобами и апелляциями регулируется документом «ДП СМ ОС 04:2025»"
+
+#: templates/core/certification-body-pro.html:415
+msgid "Shikoyatlar"
+msgstr "Жалобы"
+
+#: templates/core/certification-body-pro.html:416
+msgid "Quyidagi holatlarda shikoyat bildirish mumkin:"
+msgstr "Жалоба может быть подана в следующих случаях:"
+
+#: templates/core/certification-body-pro.html:422
+#: templates/core/certification-body.html:387
+msgid "Sertifikatlash ishlari muddatlariga rioya qilinmasligi"
+msgstr "Несоблюдение сроков выполнения работ по сертификации"
+
+#: templates/core/certification-body-pro.html:428
+#: templates/core/certification-body.html:391
+msgid "Protseduralarga amal qilinmasligi"
+msgstr "Несоблюдение процедур"
+
+#: templates/core/certification-body-pro.html:434
+msgid "OS xodimlarining noto'g'ri xatti-harakatlari"
+msgstr "Неправомерные действия сотрудников ОС"
+
+#: templates/core/certification-body-pro.html:440
+#: templates/core/certification-body.html:399
+msgid ""
+"Mahsulotning normativ hujjat talablariga muvofiqligi yoki muvofiqliksizligi"
+msgstr ""
+"Соответствие или несоответствие продукции требованиям нормативного документа"
+
+#: templates/core/certification-body-pro.html:446
+msgid "Muayyan standart yoki sertifikatlash tartibining qo'llanilishi"
+msgstr "Применение конкретного стандарта или порядка сертификации"
+
+#: templates/core/certification-body-pro.html:458
+#: templates/core/certification-body.html:414
+msgid "Apellyatsiyalar"
+msgstr "Апелляции"
+
+#: templates/core/certification-body-pro.html:460
+msgid ""
+"Apellyatsiyalar ilgari kelib tushgan shikoyatlar bo'yicha mas'ul shaxslar "
+"tomonidan qabul qilingan qarorlar yuzasidan kelib chiqqan bahsli masalalar "
+"holatida ko'riladi."
+msgstr ""
+"Апелляции рассматриваются в случае спорных вопросов, возникших по решениям, "
+"принятым ответственными лицами по ранее поступившим жалобам."
+
+#: templates/core/certification-body-pro.html:463
+msgid "Apellyatsiya berish asoslari:"
+msgstr "Основания для подачи апелляции:"
+
+#: templates/core/certification-body-pro.html:469
+msgid "Shikoyat bo'yicha qabul qilingan qarorga norozilik"
+msgstr "Несогласие с решением, принятым по жалобе"
+
+#: templates/core/certification-body-pro.html:475
+msgid "Qarorning asoslanmaganligiga da'vo"
+msgstr "Заявление о необоснованности решения"
+
+#: templates/core/certification-body-pro.html:481
+msgid "Yangi dalillar yoki hujjatlar mavjudligi"
+msgstr "Наличие новых доказательств или документов"
+
+#: templates/core/certification-body-pro.html:498
+#: templates/core/certification-body.html:437 templates/core/home.html:630
+msgid "Sertifikat olishni xohlaysizmi?"
+msgstr "Хотите получить сертификат?"
+
+#: templates/core/certification-body-pro.html:501
+#: templates/core/certification-body.html:440 templates/core/home.html:633
+#: templates/services/list.html:76
+msgid "Biz bilan bog'laning — mutaxassislarimiz sizga yordam berishadi"
+msgstr "Свяжитесь с нами — наши специалисты вам помогут"
+
+#: templates/core/certification-body.html:6
+msgid ""
+"Special Certificate sertifikatlashtirish organi - qurilish va kimyo "
+"mahsulotlarini sertifikatlash xizmatlari"
+msgstr ""
+"Орган по сертификации Special Certificate — услуги по сертификации "
+"строительной и химической продукции"
+
+#: templates/core/certification-body.html:24
+msgid ""
+"Mahsulot sertifikatlash organi \"SPECIAL CERTIFICATE\" MCHJ elektrtexnika "
+"mahsulotlarini sertifikatlash xizmatlarini ko'rsatish maqsadida tashkil "
+"etilgan"
+msgstr ""
+"Орган по сертификации продукции ООО «SPECIAL CERTIFICATE» создан с целью "
+"оказания услуг по сертификации электротехнической продукции"
+
+#: templates/core/certification-body.html:35
+msgid "Bog'lanish ma'lumotlari"
+msgstr "Контактная информация"
+
+#: templates/core/certification-body.html:43
+msgid "Yuridik manzil:"
+msgstr "Юридический адрес:"
+
+#: templates/core/certification-body.html:52
+msgid "Telefon:"
+msgstr "Телефон:"
+
+#: templates/core/certification-body.html:65
+msgid "Elektron pochta:"
+msgstr "Электронная почта:"
+
+#: templates/core/certification-body.html:74
+msgid "Veb-sayt:"
+msgstr "Веб-сайт:"
+
+#: templates/core/certification-body.html:92
+msgid "Ma'lumotlar"
+msgstr "Информация"
+
+#: templates/core/certification-body.html:95
+msgid "Sertifikatlashtirish organi haqida"
+msgstr "Об органе по сертификации"
+
+#: templates/core/certification-body.html:98
+msgid "Quyidagi bo'limlarni bosib batafsil ma'lumot olishingiz mumkin"
+msgstr "Нажмите на разделы ниже, чтобы получить подробную информацию"
+
+#: templates/core/certification-body.html:113
+msgid "Sertifikatlash sxemalari va tartib-taomillari haqida ma'lumot"
+msgstr "Информация о схемах и процедурах сертификации"
+
+#: templates/core/certification-body.html:124
+msgid ""
+"Sertifikatlashtirish organi o'z faoliyatida quyidagi sxemalar bo'yicha "
+"sertifikatlashni amalga oshiradi: <strong class=\"text-dark dark:text-"
+"white\">3, 7, 7A</strong>."
+msgstr ""
+"Орган по сертификации в своей деятельности осуществляет сертификацию по "
+"следующим схемам: <strong class=\"text-dark dark:text-white\">3, 7, 7A</"
+"strong>."
+
+#: templates/core/certification-body.html:127
+msgid ""
+"Mahsulotlarni sertifikatlash qoidalari <strong class=\"text-dark dark:text-"
+"white\">\"PSP SO 03:2025 Mahsulotlarni sertifikatlash qoidalari. Menejment "
+"tizimi hujjati\"</strong>da belgilangan bo'lib, u O'zbekiston Respublikasi "
+"Vazirlar Mahkamasining 2004-yil 6-iyuldagi <strong class=\"text-dark "
+"dark:text-white\">318-son</strong> qarori asosida ishlab chiqilgan."
+msgstr ""
+"Правила сертификации продукции установлены в <strong class=\"text-dark "
+"dark:text-white\">«ПСП СО 03:2025 Правила сертификации продукции. Документ "
+"системы менеджмента»</strong>, разработанном на основании постановления "
+"Кабинета Министров Республики Узбекистан <strong class=\"text-dark dark:text-"
+"white\">№318</strong> от 6 июля 2004 года."
+
+#: templates/core/certification-body.html:130
+msgid ""
+"Ushbu hujjatda baholash tartib-taomillari, muvofiqlik sertifikatini berish, "
+"tasdiqlash, amal qilish sohasini kengaytirish yoki qisqartirish, shuningdek "
+"sertifikatni to'xtatib turish, bekor qilish yoki sertifikatlashni rad etish "
+"bo'yicha talablar, qoidalar va tartiblar belgilab qo'yilgan."
+msgstr ""
+"В данном документе установлены требования, правила и процедуры в отношении "
+"процедур оценки, выдачи и подтверждения сертификата соответствия, расширения "
+"или сокращения области действия, а также приостановления, аннулирования "
+"сертификата или отказа в сертификации."
+
+#: templates/core/certification-body.html:145
+msgid "To'lovlar haqida umumiy ma'lumot"
+msgstr "Общая информация об оплате"
+
+#: templates/core/certification-body.html:156
+msgid ""
+"Mahsulotni sertifikatlash organi faoliyatini moliyaviy qo'llab-quvvatlash "
+"mahsulotni sertifikatlash xizmatlari uchun to'lovlar, sertifikatlangan "
+"mahsulotlarni davriy baholash va O'zbekiston Respublikasining amaldagi "
+"qonunchiligiga zid bo'lmagan boshqa ishlar orqali amalga oshiriladi."
+msgstr ""
+"Финансовая поддержка деятельности органа по сертификации продукции "
+"осуществляется за счёт оплаты услуг по сертификации продукции, периодической "
+"оценки сертифицированной продукции и других работ, не противоречащих "
+"действующему законодательству Республики Узбекистан."
+
+#: templates/core/certification-body.html:159
+msgid ""
+"SO barcha manfaatdor tomonlarga — buyurtmachi tashkilotning hajmidan, uning "
+"har qanday uyushma yoki guruhlarga a'zoligidan, shuningdek ilgari berilgan "
+"sertifikatlar sonidan qat'i nazar — sertifikatlashtirish organi "
+"xizmatlaridan teng foydalanish imkoniyatini ta'minlaydi. Moliyaviy, tartibiy "
+"yoki boshqa talablar va shartlardagi farqlar istisno etiladi. Shu maqsadda "
+"SOda xizmatlar uchun to'lov ish hajmi, murakkabligi va o'ziga xosligiga, "
+"shuningdek, amaldagi sertifikatlash sxemasiga qarab <strong class=\"text-"
+"dark dark:text-white\">belgilangan (fiksirlangan) tarif</strong> bo'yicha "
+"amalga oshiriladi."
+msgstr ""
+"СО обеспечивает всем заинтересованным сторонам — независимо от размера "
+"организации заказчика, его членства в каких-либо ассоциациях или группах, а "
+"также количества ранее выданных сертификатов — равный доступ к услугам "
+"органа по сертификации. Различия в финансовых, процедурных и иных "
+"требованиях и условиях исключаются. С этой целью в СО оплата услуг "
+"производится по <strong class=\"text-dark dark:text-white\">установленному "
+"(фиксированному) тарифу</strong>, в зависимости от объёма, сложности и "
+"специфики работ, а также действующей схемы сертификации."
+
+#: templates/core/certification-body.html:162
+msgid ""
+"Buyurtmachi so'rovi asosida SO mahsulotni sertifikatlash xizmatlari uchun "
+"to'lov bo'yicha asoslangan tushuntirishlar bilan birga kalkulyatsiyani "
+"taqdim etishga majburdir."
+msgstr ""
+"По запросу заказчика СО обязан предоставить калькуляцию по оплате услуг "
+"сертификации продукции с обоснованными пояснениями."
+
+#: templates/core/certification-body.html:165
+msgid ""
+"Mahsulotni sertifikatlash organi sertifikatlash ishlarini bajarish, "
+"xodimlarning malakasini saqlab qolish, boshqaruv tizimini boshqarish va "
+"xolislik talablariga rioya qilish uchun yetarli moliyaviy resurslarning "
+"mavjudligini ta'minlaydi. Xizmatlar narxi haqidagi ma'lumotlar ish "
+"boshlanishidan oldin ariza beruvchilarga yetkaziladi va shartnomada qayd "
+"etiladi. Moliyaviy shartlar, ish hajmi va sertifikatlash natijalari to'lov "
+"miqdoridan mustaqil bo'lib, qabul qilingan qarorlarning xolisligiga ta'sir "
+"qilmaydi."
+msgstr ""
+"Орган по сертификации продукции обеспечивает наличие достаточных финансовых "
+"ресурсов для выполнения работ по сертификации, поддержания квалификации "
+"сотрудников, управления системой менеджмента и соблюдения требований "
+"беспристрастности. Информация о стоимости услуг доводится до заявителей до "
+"начала работ и фиксируется в договоре. Финансовые условия, объём работ и "
+"результаты сертификации не зависят от размера оплаты и не влияют на "
+"беспристрастность принимаемых решений."
+
+#: templates/core/certification-body.html:169
+msgid "To'lov quyidagi xizmat turlariga nisbatan amalga oshiriladi:"
+msgstr "Оплата производится в отношении следующих видов услуг:"
+
+#: templates/core/certification-body.html:177
+msgid "Arizani ko'rib chiqish va qaror qabul qilish"
+msgstr "Рассмотрение заявки и принятие решения"
+
+#: templates/core/certification-body.html:183
+msgid "Sertifikatlash obyektlarini aniqlash va tanlash"
+msgstr "Идентификация и отбор объектов сертификации"
+
+#: templates/core/certification-body.html:189
+msgid "Sertifikatlash obyektlarini sinov laboratoriyasiga yetkazib berish"
+msgstr "Доставка объектов сертификации в испытательную лабораторию"
+
+#: templates/core/certification-body.html:195
+msgid "Mahsulotni sertifikatlash bo'yicha barcha yozuvlarni tayyorlash"
+msgstr "Подготовка всех записей по сертификации продукции"
+
+#: templates/core/certification-body.html:207
+msgid ""
+"PKMning 348-son qarorining 6-bandiga muvofiq, sertifikatlash organi "
+"tomonidan sertifikatlangan mahsulotlar ishlab chiqaruvchilardan olingan "
+"muvofiqlik belgisidan foydalanganlik uchun bir martalik to'lovlar"
+msgstr ""
+"В соответствии с пунктом 6 постановления ПКМ №348 — разовые платежи, "
+"полученные органом по сертификации от производителей сертифицированной "
+"продукции за использование знака соответствия"
+
+#: templates/core/certification-body.html:225
+msgid "Buyurtmachilarning huquq va majburiyatlari"
+msgstr "Права и обязанности заказчиков"
+
+#: templates/core/certification-body.html:236
+msgid ""
+"SO buyurtmachilar bilan yuridik kuchga ega bo'lgan <strong class=\"text-dark "
+"dark:text-white\">\"Muvofiqlik sertifikatini qo'llash va muvofiqlik "
+"belgisidan foydalanish huquqini berish to'g'risidagi shartnoma\"</strong>ni "
+"tuzadi."
+msgstr ""
+"СО заключает с заказчиками юридически обязательный <strong class=\"text-dark "
+"dark:text-white\">«Договор о применении сертификата соответствия и "
+"предоставлении права использования знака соответствия»</strong>."
+
+#: templates/core/certification-body.html:239
+msgid ""
+"Mazkur shartnoma hujjatiga <strong class=\"text-dark dark:text-white\">(RSM "
+"SO 01:F01)</strong> SO hamda buyurtmachining javobgarligi belgilab "
+"qo'yiladi. SO arizalarni ko'rib chiqqandan va ijobiy qaror qabul qilgandan "
+"so'ng shartnoma loyihasi buyurtmachiga yuboriladi."
+msgstr ""
+"В данном документе договора <strong class=\"text-dark dark:text-white\">(РСМ "
+"СО 01:F01)</strong> устанавливается ответственность СО и заказчика. После "
+"рассмотрения заявок и принятия положительного решения СО направляет проект "
+"договора заказчику."
+
+#: templates/core/certification-body.html:248
+msgid "I. Buyurtmachi majburiyatlari:"
+msgstr "I. Обязанности заказчика:"
+
+#: templates/core/certification-body.html:253
+msgid ""
+"Sertifikatlash organiga O'zbekiston Respublikasining amaldagi qonunchiligiga "
+"muvofiq mahsulotning muvofiqligini tasdiqlash uchun zarur va yetarli "
+"hajmdagi hujjatlar va materiallarni taqdim etish."
+msgstr ""
+"Предоставление органу по сертификации необходимых и достаточных по объёму "
+"документов и материалов для подтверждения соответствия продукции согласно "
+"действующему законодательству Республики Узбекистан."
+
+#: templates/core/certification-body.html:257
+msgid ""
+"Belgilangan sertifikatlash talablarining doimiy ravishda bajarilishini "
+"ta'minlash, shu jumladan Sertifikatlash organiga sertifikatlangan mahsulotga "
+"kiritilgan o'zgarishlar haqida ma'lumot berish."
+msgstr ""
+"Обеспечение постоянного выполнения установленных требований сертификации, "
+"включая информирование органа по сертификации об изменениях, внесённых в "
+"сертифицированную продукцию."
+
+#: templates/core/certification-body.html:261
+msgid ""
+"Uzluksiz ishlab chiqarish sertifikati mavjud bo'lganda sertifikatlangan "
+"mahsulotlarning belgilangan standartlar va me'yoriy hujjat talablariga "
+"muvofiqligini ta'minlash."
+msgstr ""
+"При наличии сертификата серийного производства — обеспечение соответствия "
+"сертифицированной продукции требованиям установленных стандартов и "
+"нормативных документов."
+
+#: templates/core/certification-body.html:265
+msgid ""
+"Sertifikatlangan mahsulotlarni baholash va davriy inspeksiya nazoratini "
+"o'tkazish uchun barcha zarur imkoniyatlarni (hujjatlar, uskunalar, hudud, "
+"xodimlar, subpudratchilar) taqdim etish; shikoyatlarni ko'rib chiqish uchun "
+"sharoit yaratish; zarur bo'lganda kuzatuvchilarning ishtirokini ta'minlash."
+msgstr ""
+"Предоставление всех необходимых возможностей (документы, оборудование, "
+"территория, персонал, субподрядчики) для оценки сертифицированной продукции "
+"и проведения периодического инспекционного контроля; создание условий для "
+"рассмотрения жалоб; при необходимости обеспечение участия наблюдателей."
+
+#: templates/core/certification-body.html:269
+msgid ""
+"Sertifikatlashtirish doirasiga muvofiq sertifikatlash bo'yicha shikoyatlar "
+"berish."
+msgstr "Подача жалоб по сертификации в соответствии с областью сертификации."
+
+#: templates/core/certification-body.html:273
+msgid ""
+"Mahsulot sertifikatlashdan Sertifikatlashtirish organining obro'siga putur "
+"yetkazadigan tarzda foydalanmaslik va chalg'ituvchi yoki noqonuniy "
+"bayonotlar bermaslik."
+msgstr ""
+"Не использовать сертификацию продукции в ущерб репутации органа по "
+"сертификации и не делать вводящих в заблуждение или незаконных заявлений."
+
+#: templates/core/certification-body.html:277
+msgid ""
+"Muvofiqlik sertifikati to'xtatib qo'yilgandan, bekor qilingandan so'ng, "
+"sertifikatlashtirishga havolalarni o'z ichiga olgan barcha reklama "
+"materiallaridan foydalanishni to'xtatish va bir oydan oshmagan muddatda SO "
+"bilan kelishilgan tuzatish choralarini ko'rish. Sertifikat bekor "
+"qilinganidan keyin 3 kun ichida uni SOga qaytarish."
+msgstr ""
+"После приостановления или аннулирования сертификата соответствия — "
+"прекратить использование всех рекламных материалов, содержащих ссылки на "
+"сертификацию, и в течение не более одного месяца принять корректирующие "
+"меры, согласованные с СО. Вернуть сертификат в СО в течение 3 дней после его "
+"аннулирования."
+
+#: templates/core/certification-body.html:281
+msgid ""
+"Boshqa shaxslarga berilgan sertifikatlashtirish hujjatlarining nusxalarini "
+"to'liq yoki sertifikatlashtirish qoidalarida ko'rsatilganidek takrorlash."
+msgstr ""
+"Воспроизведение копий сертификационных документов, переданных другим лицам, "
+"полностью или так, как указано в правилах сертификации."
+
+#: templates/core/certification-body.html:285
+msgid ""
+"Hujjatlar, broshyuralar yoki reklama varaqalarida o'z mahsulotlarini "
+"sertifikatlashtirishga murojaat qilganda SO tomonidan belgilangan talablarga "
+"yoki sertifikatlashtirish qoidalarida ko'rsatilganidek rioya qilish."
+msgstr ""
+"При ссылках на сертификацию своей продукции в документах, брошюрах или "
+"рекламных листках — соблюдение требований, установленных СО, или указанных в "
+"правилах сертификации."
+
+#: templates/core/certification-body.html:289
+msgid ""
+"Muvofiqlik belgisidan foydalanishga oid sertifikatlashtirish qoidalarida "
+"belgilangan barcha talablarga, shuningdek mahsulot haqidagi ma'lumotlarga "
+"rioya qilish."
+msgstr ""
+"Соблюдение всех требований правил сертификации, касающихся использования "
+"знака соответствия, а также сведений о продукции."
+
+#: templates/core/certification-body.html:293
+msgid ""
+"Sertifikatlashtirish talablariga rioya qilish bilan bog'liq barcha "
+"shikoyatlar haqida yozuvlarni yuritish va ularni SOga so'rov bo'yicha taqdim "
+"etish; bunday shikoyatlar bo'yicha tegishli choralarni ko'rish va ko'rilgan "
+"choralarni hujjatlashtirish."
+msgstr ""
+"Ведение записей обо всех жалобах, связанных с соблюдением требований "
+"сертификации, и их предоставление СО по запросу; принятие соответствующих "
+"мер по таким жалобам и документирование принятых мер."
+
+#: templates/core/certification-body.html:297
+msgid ""
+"Sertifikatlashtirish organini uning sertifikatlashtirish talablariga rioya "
+"qilish qobiliyatiga ta'sir qilishi mumkin bo'lgan har qanday o'zgarishlar "
+"(yuridik, tijorat, tashkiliy maqom, mulkchilik shakli; tashkilot va "
+"boshqaruv; mahsulot yoki ishlab chiqarish usuli; aloqa ma'lumotlari va "
+"ishlab chiqarish joylashuvi; boshqaruv tizimidagi muhim o'zgarishlar) haqida "
+"darhol xabardor qilish."
+msgstr ""
+"Немедленное уведомление органа по сертификации о любых изменениях "
+"(юридических, коммерческих, организационных, формы собственности; "
+"организации и управления; продукции или способа производства; контактных "
+"данных и места производства; существенных изменениях в системе менеджмента), "
+"которые могут повлиять на его способность соблюдать требования сертификации."
+
+#: templates/core/certification-body.html:301
+msgid ""
+"Xizmat ko'rsatilgan kundan boshlab 5 (besh) ish kuni ichida ko'rsatilgan "
+"xizmatlar to'g'risidagi dalolatnomani imzolash yoki yozma ravishda asosli "
+"ravishda bosh tortish. Shikoyatlar bo'lmagan taqdirda xizmatlar to'liq qabul "
+"qilingan hisoblanadi."
+msgstr ""
+"В течение 5 (пяти) рабочих дней с момента оказания услуг — подписание акта "
+"об оказанных услугах или письменный обоснованный отказ. При отсутствии "
+"претензий услуги считаются полностью принятыми."
+
+#: templates/core/certification-body.html:305
+msgid ""
+"Olingan natijalardan qat'i nazar, ushbu Shartnoma bo'yicha ko'rsatilgan "
+"xizmatlar uchun to'lovni amalga oshirish."
+msgstr ""
+"Произведение оплаты за услуги, оказанные по настоящему Договору, независимо "
+"от полученных результатов."
+
+#: templates/core/certification-body.html:316
+msgid "II. Buyurtmachi huquqlari:"
+msgstr "II. Права заказчика:"
+
+#: templates/core/certification-body.html:321
+msgid "Sertifikatlash organini mustaqil ravishda tanlash."
+msgstr "Самостоятельный выбор органа по сертификации."
+
+#: templates/core/certification-body.html:325
+msgid ""
+"Buyurtmachi istalgan vaqtda quyidagi hujjatlarni so'rash huquqiga ega, SO "
+"esa ularni so'rov bo'yicha taqdim etishga majburdir: a) akkreditatsiya "
+"doirasiga kiruvchi mahsulotlar uchun mahsulotni sertifikatlash qoidalari; b) "
+"sertifikatlash xizmatlari uchun narxlar ro'yxati (tariflari)."
+msgstr ""
+"Заказчик имеет право в любое время запросить следующие документы, а СО "
+"обязан предоставить их по запросу: а) правила сертификации продукции для "
+"продукции, входящей в область аккредитации; б) прайс-лист (тарифы) на услуги "
+"сертификации."
+
+#: templates/core/certification-body.html:336
+msgid "III. Sertifikatlashtirish organi huquqlari:"
+msgstr "III. Права органа по сертификации:"
+
+#: templates/core/certification-body.html:341
+msgid ""
+"Mahsulot muvofiqlik sertifikati, muvofiqlik belgilari yoki sertifikatlangan "
+"mahsulotni aniqlashning boshqa vositalaridan noto'g'ri foydalanilgan "
+"taqdirda, mahsulot muvofiqlik sertifikatini to'xtatib turish yoki bekor "
+"qilish, bu haqda Buyurtmachiga va sertifikatlangan mahsulotni nazorat "
+"qiluvchi tegishli davlat nazorat organlariga yozma ravishda xabar berish."
+msgstr ""
+"Приостановление или аннулирование сертификата соответствия продукции в "
+"случае неправомерного использования сертификата соответствия, знаков "
+"соответствия или иных средств идентификации сертифицированной продукции с "
+"письменным уведомлением Заказчика и соответствующих государственных "
+"контролирующих органов, контролирующих сертифицированную продукцию."
+
+#: templates/core/certification-body.html:359
+msgid "Shikoyatlar va apellyatsiyalar bilan ishlash tartibi"
+msgstr "Порядок работы с жалобами и апелляциями"
+
+#: templates/core/certification-body.html:370
+msgid ""
+"Shikoyatlar va apellyatsiyalarni boshqarish <strong class=\"text-dark "
+"dark:text-white\">\"DP SM SO 04:2025 Hujjatlashtirilgan protsedura. "
+"Shikoyatlar va apellyatsiyalarni boshqarish\"</strong>da tartibga solinadi."
+msgstr ""
+"Управление жалобами и апелляциями регулируется <strong class=\"text-dark "
+"dark:text-white\">«ДП СМ СО 04:2025 Документированная процедура. Управление "
+"жалобами и апелляциями»</strong>."
+
+#: templates/core/certification-body.html:373
+msgid ""
+"SOda shikoyatlar va apellyatsiyalar quyidagi holatlarda kelib tushishi "
+"mumkin:"
+msgstr "Жалобы и апелляции в СО могут поступить в следующих случаях:"
+
+#: templates/core/certification-body.html:382
+msgid "Shikoyatlar — masalan:"
+msgstr "Жалобы — например:"
+
+#: templates/core/certification-body.html:395
+msgid ""
+"SO xodimlarining, shu jumladan jalb qilingan xodimlarning noto'g'ri xatti-"
+"harakatlari"
+msgstr ""
+"Неправомерные действия сотрудников СО, включая привлечённых сотрудников"
+
+#: templates/core/certification-body.html:403
+msgid ""
+"Muayyan standart yoki SOda belgilangan sertifikatlash tartibining "
+"qo'llanilishi va boshqa holatlar"
+msgstr ""
+"Применение конкретного стандарта или установленного в СО порядка "
+"сертификации и иные обстоятельства"
+
+#: templates/core/certification-body.html:417
+msgid ""
+"Ilgari kelib tushgan shikoyatlar bo'yicha mas'ul shaxslar tomonidan qabul "
+"qilingan qarorlar yuzasidan kelib chiqqan bahsli masalalar holatida "
+"ko'riladi."
+msgstr ""
+"Рассматриваются в случае спорных вопросов, возникших по решениям, принятым "
+"ответственными лицами по ранее поступившим жалобам."
+
+#: templates/core/contact.html:6
+msgid ""
+"Special Certificate bilan bog'laning. Manzil: Qarshi shahri, Katta bog' "
+"ko'chasi, 13B"
+msgstr "Свяжитесь с Special Certificate. Адрес: г. Карши, ул. Катта боғ, 13Б"
+
+#: templates/core/contact.html:24
+msgid "Savollaringiz bormi? Biz bilan bog'laning!"
+msgstr "Остались вопросы? Свяжитесь с нами!"
+
+#: templates/core/contact.html:37
+msgid "Kontakt ma'lumotlar"
+msgstr "Контактные данные"
+
+#: templates/core/contact.html:40
+msgid "Biz bilan bog'laning"
+msgstr "Свяжитесь с нами"
+
+#: templates/core/contact.html:43
+msgid ""
+"Sertifikatlashtirish va sinov xizmatlari bo'yicha savollaringiz bo'lsa, biz "
+"bilan bog'laning. Mutaxassislarimiz sizga yordam berishadi."
+msgstr ""
+"Если у вас есть вопросы по услугам сертификации и испытаний, свяжитесь с "
+"нами. Наши специалисты вам помогут."
+
+#: templates/core/contact.html:58
+msgid "Manzil"
+msgstr "Адрес"
+
+#: templates/core/contact.html:61
+msgid "Xaritada ko'rish"
+msgstr "Посмотреть на карте"
+
+#: templates/core/contact.html:81
+msgid "Dush-Juma: 09:00 - 18:00"
+msgstr "Пн-Пт: 09:00 - 18:00"
+
+#: templates/core/contact.html:93 templates/core/contact.html:201
+msgid "Email"
+msgstr "Email"
+
+#: templates/core/contact.html:97
+msgid "24 soat ichida javob beramiz"
+msgstr "Ответим в течение 24 часов"
+
+#: templates/core/contact.html:110
+msgid "Dushanba - Juma"
+msgstr "Понедельник - Пятница"
+
+#: templates/core/contact.html:142 templates/core/home.html:640
+#: templates/services/detail.html:162 templates/services/list.html:83
+msgid "Xabar yuborish"
+msgstr "Отправить сообщение"
+
+#: templates/core/contact.html:143
+msgid "Formani to'ldiring, biz siz bilan bog'lanamiz"
+msgstr "Заполните форму, и мы свяжемся с вами"
+
+#: templates/core/contact.html:178
+msgid "Ismingizni kiriting"
+msgstr "Введите ваше имя"
+
+#: templates/core/contact.html:186
+msgid "Telefon raqam"
+msgstr "Номер телефона"
+
+#: templates/core/contact.html:215
+msgid "Xabar"
+msgstr "Сообщение"
+
+#: templates/core/contact.html:235
+msgid "Yuborish"
+msgstr "Отправить"
+
+#: templates/core/contact.html:251
+msgid "Joylashuv"
+msgstr "Расположение"
+
+#: templates/core/contact.html:254
+msgid "Bizning manzil"
+msgstr "Наш адрес"
+
+#: templates/core/contact.html:257
+msgid ""
+"Qarshi shahar markazida joylashganmiz. Xaritada ko'ring va bizga tashrif "
+"buyuring."
+msgstr ""
+"Мы находимся в центре города Карши. Посмотрите на карте и приходите к нам в "
+"гости."
+
+#: templates/core/contact.html:289
+msgid "Yo'nalishni olish"
+msgstr "Построить маршрут"
+
+#: templates/core/contact.html:308
+msgid "Ko'p beriladigan savollar"
+msgstr "Часто задаваемые вопросы"
+
+#: templates/core/contact.html:311
+msgid "Savollar va javoblar"
+msgstr "Вопросы и ответы"
+
+#: templates/core/contact.html:321
+msgid "Sertifikat olish uchun qancha vaqt ketadi?"
+msgstr "Сколько времени занимает получение сертификата?"
+
+#: templates/core/contact.html:328
+msgid ""
+"Sertifikatlashtirish jarayoni odatda 5-10 ish kunini oladi. Bu materialning "
+"turiga va sinov hajmiga bog'liq. Tezkor xizmat ham mavjud."
+msgstr ""
+"Процесс сертификации обычно занимает 5-10 рабочих дней. Это зависит от типа "
+"материала и объёма испытаний. Доступна и срочная услуга."
+
+#: templates/core/contact.html:336
+msgid "Qanday hujjatlar talab qilinadi?"
+msgstr "Какие документы требуются?"
+
+#: templates/core/contact.html:343
+msgid ""
+"Ariza, kompaniya guvohnomasi nusxasi, mahsulot haqida texnik hujjatlar talab "
+"qilinadi. To'liq ro'yxat uchun biz bilan bog'laning."
+msgstr ""
+"Требуются заявка, копия свидетельства компании, техническая документация на "
+"продукцию. За полным перечнем свяжитесь с нами."
+
+#: templates/core/contact.html:351
+msgid "Sertifikat qancha muddatga beriladi?"
+msgstr "На какой срок выдаётся сертификат?"
+
+#: templates/core/contact.html:358
+msgid ""
+"Muvofiqlik sertifikati odatda 1 yildan 3 yilgacha muddatga beriladi. Bu "
+"sertifikatlashtirish sxemasiga bog'liq."
+msgstr ""
+"Сертификат соответствия обычно выдаётся на срок от 1 года до 3 лет. Это "
+"зависит от схемы сертификации."
+
+#: templates/core/contact.html:366
+msgid "Sinov namunalarini qanday topshirish kerak?"
+msgstr "Как сдавать образцы для испытаний?"
+
+#: templates/core/contact.html:373
+msgid ""
+"Sinov namunalarini bizning manzilimizga olib kelishingiz yoki biz o'zimiz "
+"olib ketishimiz mumkin. Namunalar soni va hajmi standart talablarga muvofiq "
+"belgilanadi."
+msgstr ""
+"Образцы можно привезти по нашему адресу или мы можем забрать их сами. "
+"Количество и объём образцов определяются согласно требованиям стандартов."
+
+#: templates/core/contact.html:381
+msgid "Xizmat narxlari qanday?"
+msgstr "Каковы цены на услуги?"
+
+#: templates/core/contact.html:388
+msgid ""
+"Narxlar xizmat turiga va hajmiga qarab belgilanadi. Aniq narxlarni bilish "
+"uchun biz bilan bog'laning - bepul konsultatsiya beramiz."
+msgstr ""
+"Цены устанавливаются в зависимости от типа и объёма услуги. Для уточнения "
+"цен свяжитесь с нами — бесплатная консультация."
+
+#: templates/core/contact.html:404
+msgid "Hali savollaringiz bormi?"
+msgstr "Ещё остались вопросы?"
+
+#: templates/core/contact.html:407
+msgid ""
+"Bizga qo'ng'iroq qiling — mutaxassislarimiz barcha savollarga javob berishadi"
+msgstr "Позвоните нам — наши специалисты ответят на все ваши вопросы"
+
+#: templates/core/home.html:18
+msgid "Xizmatlarimiz"
+msgstr "Наши услуги"
+
+#: templates/core/home.html:21
+msgid "Biz taqdim etadigan xizmatlar"
+msgstr "Услуги, которые мы предоставляем"
+
+#: templates/core/home.html:24
+msgid ""
+"Qurilish materiallarini sertifikatlashtirish va sinov laboratoriyasi "
+"xizmatlari"
+msgstr ""
+"Услуги по сертификации строительных материалов и испытательной лаборатории"
+
+#: templates/core/home.html:39 templates/services/list.html:44
+msgid "Qurilish va kimyo maxsulotlari sertifikatlari va sinov bayonnomalari"
+msgstr "Сертификаты и протоколы испытаний строительной и химической продукции"
+
+#: templates/core/home.html:47 templates/services/list.html:52
+msgid "SO xizmatlari"
+msgstr "Услуги ОС"
+
+#: templates/core/home.html:54 templates/services/list.html:59
+msgid "SL xizmatlari"
+msgstr "Услуги ИЛ"
+
+#: templates/core/home.html:71 templates/news/list.html:4
+#: templates/news/list.html:22
+msgid "Yangiliklar"
+msgstr "Новости"
+
+#: templates/core/home.html:74
+msgid "So'nggi yangiliklar"
+msgstr "Последние новости"
+
+#: templates/core/home.html:77
+msgid "Kompaniyamiz faoliyati va soha yangiliklari bilan tanishing"
+msgstr "Ознакомьтесь с деятельностью нашей компании и новостями отрасли"
+
+#: templates/core/home.html:120
+msgid "Batafsil"
+msgstr "Подробнее"
+
+#: templates/core/home.html:129 templates/news/list.html:151
+msgid "Yangiliklar hali qo'shilmagan"
+msgstr "Новости пока не добавлены"
+
+#: templates/core/home.html:138 templates/news/detail.html:109
+msgid "Barcha yangiliklar"
+msgstr "Все новости"
+
+#: templates/core/home.html:177
+msgid ""
+"Ishonchli hamkor — <span class=\"text-secondary\">Special Certificate</span>"
+msgstr ""
+"Надёжный партнёр — <span class=\"text-secondary\">Special Certificate</span>"
+
+#: templates/core/home.html:180
+msgid ""
+"Special Certificate sertifikatlashtirish organi va sinov laboratoriyasi "
+"sifatida faoliyat yuritadi. Biz qurilish materiallari va kimyo "
+"maxsulotlarini sinash va sertifikatlashtirish bo'yicha keng qamrovli "
+"xizmatlar ko'rsatamiz."
+msgstr ""
+"Special Certificate работает как орган по сертификации и испытательная "
+"лаборатория. Мы оказываем комплексные услуги по испытанию и сертификации "
+"строительных материалов и химической продукции."
+
+#: templates/core/home.html:194
+msgid "Rasmiy akkreditatsiya"
+msgstr "Официальная аккредитация"
+
+#: templates/core/home.html:202 templates/core/testing-laboratory.html:137
+msgid "Malakali mutaxassislar"
+msgstr "Квалифицированные специалисты"
+
+#: templates/core/home.html:210 templates/core/testing-laboratory.html:129
+msgid "Zamonaviy uskunalar"
+msgstr "Современное оборудование"
+
+#: templates/core/home.html:218
+msgid "Sifatli xizmatlar"
+msgstr "Качественные услуги"
+
+#: templates/core/home.html:223
+msgid "Batafsil ma'lumot"
+msgstr "Подробная информация"
+
+#: templates/core/home.html:240
+msgid "Hujjatlar"
+msgstr "Документы"
+
+#: templates/core/home.html:243
+msgid "Normativ hujjatlar"
+msgstr "Нормативные документы"
+
+#: templates/core/home.html:246
+msgid ""
+"Sertifikatlashtirish organi va sinov laboratoriyasi faoliyatini tartibga "
+"soluvchi hujjatlar"
+msgstr ""
+"Документы, регулирующие деятельность органа по сертификации и испытательной "
+"лаборатории"
+
+#: templates/core/home.html:263
+msgid "Sertifikatlashtirish to'lovi"
+msgstr "Оплата за сертификацию"
+
+#: templates/core/home.html:266
+msgid "Sertifikatlashtirish organi tomonidan to'lovlar tartibi"
+msgstr "Порядок оплаты органом по сертификации"
+
+#: templates/core/home.html:272 templates/core/home.html:297
+#: templates/core/home.html:322 templates/core/home.html:347
+#: templates/core/home.html:372 templates/core/home.html:397
+#: templates/core/home.html:422 templates/core/home.html:447
+#: templates/core/home.html:472 templates/core/home.html:497
+msgid "Yuklab olish"
+msgstr "Скачать"
+
+#: templates/core/home.html:288
+msgid "Tashkiliy-boshqaruv tuzilmasi"
+msgstr "Организационно-управленческая структура"
+
+#: templates/core/home.html:291
+msgid ""
+"Sertifikatlashtirish organi tuzilmasi va ichki bo'linmalar bilan aloqasi"
+msgstr "Структура органа по сертификации и связь с внутренними подразделениями"
+
+#: templates/core/home.html:313
+msgid "Sinov laboratoriyasi tuzilmasi"
+msgstr "Структура испытательной лаборатории"
+
+#: templates/core/home.html:316
+msgid "Sinov laboratoriyasi tuzilmasi va ichki bo'linmalar bilan aloqasi"
+msgstr ""
+"Структура испытательной лаборатории и связь с внутренними подразделениями"
+
+#: templates/core/home.html:338
+msgid "Mahsulotni sertifikatlashtirish qoidalari"
+msgstr "Правила сертификации продукции"
+
+#: templates/core/home.html:341
+msgid "Sertifikatlashtirish jarayoni va qoidalari haqida ma'lumot"
+msgstr "Информация о процессе и правилах сертификации"
+
+#: templates/core/home.html:366
+msgid "Buyurtmachining huquqlari va majburiyatlari haqida ma'lumot"
+msgstr "Информация о правах и обязанностях заказчика"
+
+#: templates/core/home.html:388
+msgid "Apellyatsiya berish tartibi"
+msgstr "Порядок подачи апелляции"
+
+#: templates/core/home.html:391
+msgid "Sertifikatlashtirish va sinov xizmatlariga apellyatsiya berish tartibi"
+msgstr "Порядок подачи апелляции на услуги сертификации и испытаний"
+
+#: templates/core/home.html:413
+msgid "Akkreditatsiya sohasi (Sertifikatlashtirish)"
+msgstr "Область аккредитации (Сертификация)"
+
+#: templates/core/home.html:416
+msgid "Sertifikatlashtirish organi faoliyat sohasini belgilovchi hujjat"
+msgstr "Документ, определяющий область деятельности органа по сертификации"
+
+#: templates/core/home.html:438
+msgid "Akkreditatsiya sohasi (Laboratoriya)"
+msgstr "Область аккредитации (Лаборатория)"
+
+#: templates/core/home.html:441
+msgid "Sinov laboratoriyasi faoliyat sohasini belgilovchi hujjat"
+msgstr "Документ, определяющий область деятельности испытательной лаборатории"
+
+#: templates/core/home.html:463
+msgid "Sertifikatlashtirish sxemasi"
+msgstr "Схема сертификации"
+
+#: templates/core/home.html:466
+msgid "Sertifikatlashtirish organida qo'llaniladigan sxemalar"
+msgstr "Схемы, применяемые в органе по сертификации"
+
+#: templates/core/home.html:488 templates/core/home.html:576
+msgid "Sug'urta polisi"
+msgstr "Страховой полис"
+
+#: templates/core/home.html:491
+msgid "Sertifikatlashtirish organi javobgarlik sug'urta polisi"
+msgstr "Страховой полис ответственности органа по сертификации"
+
+#: templates/core/home.html:514
+msgid "Sertifikatlar"
+msgstr "Сертификаты"
+
+#: templates/core/home.html:517
+msgid "Akkreditatsiya sertifikatlari"
+msgstr "Сертификаты аккредитации"
+
+#: templates/core/home.html:520
+msgid ""
+"O'zbekiston Texnik Tartibga Solish Agentligi tomonidan berilgan rasmiy "
+"hujjatlar"
+msgstr ""
+"Официальные документы, выданные Агентством технического регулирования "
+"Узбекистана"
+
+#: templates/core/home.html:542 templates/core/home.html:562
+#: templates/core/home.html:582
+msgid "Ko'rish"
+msgstr "Посмотреть"
+
+#: templates/core/home.html:577
+msgid "Javobgarlik sug'urtasi"
+msgstr "Страхование ответственности"
+
+#: templates/core/home.html:613
+msgid "Sinov turlari"
+msgstr "Виды испытаний"
+
+#: templates/core/testing-laboratory.html:6
+msgid ""
+"Special Certificate sinov laboratoriyasi - qurilish materiallarini sinash "
+"xizmatlari"
+msgstr ""
+"Испытательная лаборатория Special Certificate — услуги по испытанию "
+"строительных материалов"
+
+#: templates/core/testing-laboratory.html:21
+msgid "Qurilish va kimyo maxsulotlarini sinash"
+msgstr "Испытания строительной и химической продукции"
+
+#: templates/core/testing-laboratory.html:24
+msgid ""
+"Zamonaviy uskunalar va malakali xodimlar bilan ta'minlangan "
+"labaratoriyamizda qurilish va kimyo maxsulotlarining standart talablariga "
+"asosan sinov o'tkaziladi"
+msgstr ""
+"В нашей лаборатории, оснащённой современным оборудованием и "
+"квалифицированным персоналом, проводятся испытания строительной и химической "
+"продукции в соответствии с требованиями стандартов"
+
+#: templates/core/testing-laboratory.html:103
+#: templates/core/testing-laboratory.html:367
+msgid "Sinov uskunalari"
+msgstr "Испытательное оборудование"
+
+#: templates/core/testing-laboratory.html:112
+msgid "Laboratoriya haqida"
+msgstr "О лаборатории"
+
+#: templates/core/testing-laboratory.html:115
+msgid "Zamonaviy sinov laboratoriyasi"
+msgstr "Современная испытательная лаборатория"
+
+#: templates/core/testing-laboratory.html:118
+msgid "Sinov laboratoriyamiz \\"
+msgstr "Наша испытательная лаборатория"
+
+#: templates/core/testing-laboratory.html:145
+msgid "Aniq natijalar"
+msgstr "Точные результаты"
+
+#: templates/core/testing-laboratory.html:153
+msgid "Sifatli xizmat"
+msgstr "Качественное обслуживание"
+
+#: templates/core/testing-laboratory.html:168
+msgid "Sinov xizmatlari"
+msgstr "Услуги испытаний"
+
+#: templates/core/testing-laboratory.html:171
+msgid "Sinovdan o'tkaziladigan materiallar"
+msgstr "Материалы, подлежащие испытанию"
+
+#: templates/core/testing-laboratory.html:174
+msgid "Laboratoriyamizda quyidagi qurilish materiallarini sinashingiz mumkin"
+msgstr ""
+"В нашей лаборатории вы можете испытать следующие строительные материалы"
+
+#: templates/core/testing-laboratory.html:188
+msgid "Qurilish maxsulotlari"
+msgstr "Строительная продукция"
+
+#: templates/core/testing-laboratory.html:189
+#: templates/core/testing-laboratory.html:244
+msgid "Sinovdan o'tkazilayotgan ob'ekt nomi"
+msgstr "Наименование испытуемого объекта"
+
+#: templates/core/testing-laboratory.html:195
+msgid "Qurilish ishlari uchun qum"
+msgstr "Песок для строительных работ"
+
+#: templates/core/testing-laboratory.html:201
+msgid "Qurilish ishlari uchun shag'al va mayda tosh"
+msgstr "Гравий и щебень для строительных работ"
+
+#: templates/core/testing-laboratory.html:207
+msgid "Betonlar"
+msgstr "Бетоны"
+
+#: templates/core/testing-laboratory.html:213
+msgid "Gruntlar (tuproqlar)"
+msgstr "Грунты (почвы)"
+
+#: templates/core/testing-laboratory.html:219
+msgid "Sementlar"
+msgstr "Цементы"
+
+#: templates/core/testing-laboratory.html:225
+msgid "Asfaltbeton aralashmalari"
+msgstr "Асфальтобетонные смеси"
+
+#: templates/core/testing-laboratory.html:243
+msgid "Kimyo maxsulotlari"
+msgstr "Химическая продукция"
+
+#: templates/core/testing-laboratory.html:250
+msgid "Tabiiy gaz (yoqilg'i siqilgan gaz, magistral gaz)"
+msgstr "Природный газ (топливный сжатый газ, магистральный газ)"
+
+#: templates/core/testing-laboratory.html:256
+msgid "Suyultirilgan uglevodorod gazlari"
+msgstr "Сжиженные углеводородные газы"
+
+#: templates/core/testing-laboratory.html:262
+msgid "Barqaror gaz kondensati"
+msgstr "Стабильный газовый конденсат"
+
+#: templates/core/testing-laboratory.html:268
+msgid "Suyuq kimyoviy mahsulotlar"
+msgstr "Жидкие химические продукты"
+
+#: templates/core/testing-laboratory.html:274
+msgid "Ichimlik suvi"
+msgstr "Питьевая вода"
+
+#: templates/core/testing-laboratory.html:280
+msgid "Bo'r"
+msgstr "Мел"
+
+#: templates/core/testing-laboratory.html:301
+msgid "Laboratoriya uskunalari"
+msgstr "Лабораторное оборудование"
+
+#: templates/core/testing-laboratory.html:304
+msgid "Zamonaviy jihozlar"
+msgstr "Современное оснащение"
+
+#: templates/core/testing-laboratory.html:307
+msgid ""
+"Laboratoriyamiz eng zamonaviy va aniq natija beradigan uskunalar bilan "
+"jihozlangan"
+msgstr ""
+"Наша лаборатория оснащена самым современным оборудованием, дающим точные "
+"результаты"
+
+#: templates/core/testing-laboratory.html:320
+msgid "Gidravlik presslar"
+msgstr "Гидравлические прессы"
+
+#: templates/core/testing-laboratory.html:321
+msgid "Beton va temir-beton mustahkamligini aniqlash"
+msgstr "Определение прочности бетона и железобетона"
+
+#: templates/core/testing-laboratory.html:330
+msgid "Tarozilar"
+msgstr "Весы"
+
+#: templates/core/testing-laboratory.html:331
+msgid "Yuqori aniqlikdagi elektron tarozilar"
+msgstr "Электронные весы высокой точности"
+
+#: templates/core/testing-laboratory.html:340
+msgid "Quritgich shkaflar"
+msgstr "Сушильные шкафы"
+
+#: templates/core/testing-laboratory.html:341
+msgid "Namlik darajasini aniqlash uchun"
+msgstr "Для определения уровня влажности"
+
+#: templates/core/testing-laboratory.html:350
+msgid "Elaklar to'plami"
+msgstr "Набор сит"
+
+#: templates/core/testing-laboratory.html:351
+msgid "Granulometrik tahlil uchun"
+msgstr "Для гранулометрического анализа"
+
+#: templates/core/testing-laboratory.html:371
+msgid "Mutaxassislar"
+msgstr "Специалисты"
+
+#: templates/core/testing-laboratory.html:375
+msgid "Sinovlar"
+msgstr "Испытания"
+
+#: templates/core/testing-laboratory.html:379
+msgid "Aniqlik darajasi"
+msgstr "Степень точности"
+
+#: templates/core/testing-laboratory.html:395
+msgid "Maxsulotlaringizni sinatmoqchimisiz?"
+msgstr "Хотите испытать вашу продукцию?"
+
+#: templates/core/testing-laboratory.html:398
+msgid ""
+"Biz bilan bog'laning — namunalarni qabul qilamiz va natijalarni taqdim etamiz"
+msgstr "Свяжитесь с нами — мы примем образцы и предоставим результаты"
+
+#: templates/gallery/index.html:16
+msgid "Media"
+msgstr "Медиа"
+
+#: templates/gallery/index.html:22
+msgid "Foto va video materiallarimiz bilan tanishing"
+msgstr "Ознакомьтесь с нашими фото и видеоматериалами"
+
+#: templates/gallery/index.html:50 templates/gallery/photos.html:4
+#: templates/gallery/photos.html:22
+msgid "Foto galereya"
+msgstr "Фотогалерея"
+
+#: templates/gallery/index.html:55 templates/gallery/photos.html:25
+msgid "Laboratoriya, uskunalar va ish jarayonlari suratlari"
+msgstr "Фотографии лаборатории, оборудования и рабочих процессов"
+
+#: templates/gallery/index.html:61
+#, python-format
+msgid "%(photo_count)s ta rasm"
+msgstr "%(photo_count)s фото"
+
+#: templates/gallery/index.html:91 templates/gallery/videos.html:4
+#: templates/gallery/videos.html:22
+msgid "Video galereya"
+msgstr "Видеогалерея"
+
+#: templates/gallery/index.html:96 templates/gallery/videos.html:25
+msgid "YouTube kanalimizdagi videolar va taqdimotlar"
+msgstr "Видео и презентации с нашего YouTube-канала"
+
+#: templates/gallery/index.html:102
+#, python-format
+msgid "%(video_count)s ta video"
+msgstr "%(video_count)s видео"
+
+#: templates/gallery/photos.html:19 templates/gallery/videos.html:19
+msgid "Galereyaga qaytish"
+msgstr "Вернуться в галерею"
+
+#: templates/gallery/photos.html:74
+msgid "Rasmlar hali qo'shilmagan"
+msgstr "Фотографии пока не добавлены"
+
+#: templates/gallery/photos.html:75
+msgid "Tez orada yangi rasmlar qo'shiladi"
+msgstr "В скором времени будут добавлены новые фотографии"
+
+#: templates/gallery/videos.html:77
+msgid "Videolar hali qo'shilmagan"
+msgstr "Видео пока не добавлены"
+
+#: templates/gallery/videos.html:78
+msgid "Tez orada yangi videolar qo'shiladi"
+msgstr "В скором времени будут добавлены новые видео"
+
+#: templates/news/detail.html:22
+msgid "Yangiliklarga qaytish"
+msgstr "Вернуться к новостям"
+
+#: templates/news/detail.html:50
+#, python-format
+msgid "%(views)s ko'rish"
+msgstr "%(views)s просмотров"
+
+#: templates/news/detail.html:72
+msgid "Ulashish:"
+msgstr "Поделиться:"
+
+#: templates/news/detail.html:102
+msgid "Oldingi maqola"
+msgstr "Предыдущая статья"
+
+#: templates/news/detail.html:114
+msgid "Keyingi maqola"
+msgstr "Следующая статья"
+
+#: templates/news/detail.html:131
+msgid "O'xshash yangiliklar"
+msgstr "Похожие новости"
+
+#: templates/news/list.html:26
+msgid "Eng so'nggi yangiliklar va maqolalar"
+msgstr "Самые свежие новости и статьи"
+
+#: templates/news/list.html:40
+msgid "Barchasi"
+msgstr "Все"
+
+#: templates/news/list.html:99
+msgid "Batafsil o'qish"
+msgstr "Читать подробнее"
+
+#: templates/news/list.html:152
+msgid "Tez orada yangi maqolalar qo'shiladi"
+msgstr "В скором времени будут добавлены новые статьи"
+
+#: templates/services/detail.html:69
+msgid "Xizmat haqida"
+msgstr "Об услуге"
+
+#: templates/services/detail.html:86
+msgid "Sifat kafolati"
+msgstr "Гарантия качества"
+
+#: templates/services/detail.html:87
+msgid "Akkreditatsiyalangan laboratoriya"
+msgstr "Аккредитованная лаборатория"
+
+#: templates/services/detail.html:100
+msgid "Tezkor xizmat"
+msgstr "Срочная услуга"
+
+#: templates/services/detail.html:101
+msgid "Qisqa muddatlarda"
+msgstr "В короткие сроки"
+
+#: templates/services/detail.html:114
+msgid "Rasmiy hujjat"
+msgstr "Официальный документ"
+
+#: templates/services/detail.html:115
+msgid "Davlat tomonidan tan olingan"
+msgstr "Признан государством"
+
+#: templates/services/detail.html:128
+msgid "Tajribali mutaxassislar"
+msgstr "Опытные специалисты"
+
+#: templates/services/detail.html:129
+msgid "Malakali kadrlar jamoasi"
+msgstr "Команда квалифицированных кадров"
+
+#: templates/services/detail.html:141
+msgid "Buyurtma berish"
+msgstr "Сделать заказ"
+
+#: templates/services/detail.html:143
+msgid ""
+"Ushbu xizmat bo'yicha ma'lumot olish yoki buyurtma berish uchun biz bilan "
+"bog'laning"
+msgstr ""
+"Для получения информации или оформления заказа по данной услуге свяжитесь с "
+"нами"
+
+#: templates/services/detail.html:168
+msgid "Boshqa xizmatlar"
+msgstr "Другие услуги"
+
+#: templates/services/detail.html:179
+msgid "Barcha xizmatlar"
+msgstr "Все услуги"
+
+#: templates/services/list.html:6
+msgid ""
+"Special Certificate xizmatlari - Qurilish materiallarini "
+"sertifikatlashtirish va sinov laboratoriyasi"
+msgstr ""
+"Услуги Special Certificate — Сертификация строительных материалов и "
+"испытательная лаборатория"
+
+#: templates/services/list.html:18
+msgid "Bizning xizmatlar"
+msgstr "Наши услуги"
+
+#: templates/services/list.html:24
+msgid "Qurilish materiallarini sertifikatlashtirish va sinov xizmatlari"
+msgstr "Услуги по сертификации и испытанию строительных материалов"
+
+#: templates/services/list.html:73
+msgid "Sizga kerakli xizmatni topmadingizmi?"
+msgstr "Не нашли нужную услугу?"

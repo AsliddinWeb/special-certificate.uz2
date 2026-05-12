@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Biz haqimizda | Special Certificate{% endblock %}
+{% block title %}{% trans "Biz haqimizda" %} | Special Certificate{% endblock %}
 
-{% block meta_description %}Special Certificate - Sertifikatlashtirish organi va Sinov laboratoriyasi haqida ma'lumot{% endblock %}
+{% block meta_description %}{% trans "Special Certificate - Sertifikatlashtirish organi va Sinov laboratoriyasi haqida ma'lumot" %}{% endblock %}
 
 {% block content %}
 
@@ -15,13 +15,13 @@
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium mb-6" data-aos="fade-up">
-            Kompaniya haqida
+            {% trans "Kompaniya haqida" %}
         </span>
         <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-            Biz haqimizda
+            {% trans "Biz haqimizda" %}
         </h1>
         <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Sertifikatlashtirish organi va Sinov laboratoriyasi
+            {% trans "Sertifikatlashtirish organi va Sinov laboratoriyasi" %}
         </p>
     </div>
 </section>
@@ -34,7 +34,7 @@
             <!-- Image -->
             <div class="relative" data-aos="fade-right">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="{% static 'images/about/1.jpg' %}" alt="Biz haqimizda" class="w-full h-[500px] object-cover">
+                    <img src="{% static 'images/about/1.jpg' %}" alt="{% trans 'Biz haqimizda' %}" class="w-full h-[500px] object-cover">
                 </div>
 
                 <!-- Floating Card -->
@@ -46,8 +46,8 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="text-2xl font-bold text-dark dark:text-white">Akkreditlangan</div>
-                            <div class="text-gray-500 dark:text-gray-400">Sinov labaratoriyasi</div>
+                            <div class="text-2xl font-bold text-dark dark:text-white">{% trans "Akkreditlangan" %}</div>
+                            <div class="text-gray-500 dark:text-gray-400">{% trans "Sinov labaratoriyasi" %}</div>
                         </div>
                     </div>
                 </div>
@@ -56,31 +56,31 @@
             <!-- Content -->
             <div data-aos="fade-left">
                 <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                    Biz haqimizda
+                    {% trans "Biz haqimizda" %}
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-green-600 dark:text-white mb-6">
                     Special Certificate
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    <strong class="text-secondary dark:text-white">Special Certificate</strong> sertifikatlashtirish organi va sinov laboratoriyasi sifatida faoliyat yuritadi. Biz qurilish materiallari va kimyo maxsulotlarini sinash va sertifikatlashtirish bo'yicha keng qamrovli xizmatlar ko'rsatamiz.
+                    {% blocktrans %}<strong class="text-secondary dark:text-white">Special Certificate</strong> sertifikatlashtirish organi va sinov laboratoriyasi sifatida faoliyat yuritadi. Biz qurilish materiallari va kimyo maxsulotlarini sinash va sertifikatlashtirish bo'yicha keng qamrovli xizmatlar ko'rsatamiz.{% endblocktrans %}
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                    Malakali mutaxassislar jamoasi, zamonaviy laboratoriya uskunalari va <span class="text-secondary">akkreditatsiya</span> guvohnomasi bizning sifat kafolatimizdir.
+                    {% blocktrans %}Malakali mutaxassislar jamoasi, zamonaviy laboratoriya uskunalari va <span class="text-secondary">akkreditatsiya</span> guvohnomasi bizning sifat kafolatimizdir.{% endblocktrans %}
                 </p>
 
                 <!-- Stats -->
                 <div class="grid grid-cols-3 gap-6">
                     <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="text-3xl font-bold text-secondary">1+</div>
-                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">Yillik tajriba</div>
+                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">{% trans "Yillik tajriba" %}</div>
                     </div>
                     <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="text-3xl font-bold text-secondary">100+</div>
-                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">Mijozlar</div>
+                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">{% trans "Mijozlar" %}</div>
                     </div>
                     <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
                         <div class="text-3xl font-bold text-secondary">1500+</div>
-                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">Sinov Bayonnomalari</div>
+                        <div class="text-gray-500 dark:text-gray-400 text-sm mt-1">{% trans "Sinov Bayonnomalari" %}</div>
                     </div>
                 </div>
             </div>
@@ -95,13 +95,13 @@
         <!-- Section Header -->
         <div class="text-center mb-16" data-aos="fade-up">
             <span class="inline-block px-4 py-2 bg-secondary/10 dark:bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
-                Bizning resurslar
+                {% trans "Bizning resurslar" %}
             </span>
             <h2 class="text-3xl sm:text-4xl font-bold text-dark dark:text-white mb-4">
-                Nima uchun aynan biz?
+                {% trans "Nima uchun aynan biz?" %}
             </h2>
             <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Sertifikatlashtirish va sinov xizmatlarini yuqori sifatda ko'rsatish uchun barcha imkoniyatlarga egamiz
+                {% trans "Sertifikatlashtirish va sinov xizmatlarini yuqori sifatda ko'rsatish uchun barcha imkoniyatlarga egamiz" %}
             </p>
         </div>
 
@@ -115,9 +115,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Akkreditatsiya guvohnomasi</h3>
+                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">{% trans "Akkreditatsiya guvohnomasi" %}</h3>
                 <p class="text-gray-600 dark:text-gray-400">
-                    “O‘zbekiston akkreditatsiya markazi” DM tomonidan berilgan akkreditatsiya guvohnomasi
+                    {% trans "“O‘zbekiston akkreditatsiya markazi” DM tomonidan berilgan akkreditatsiya guvohnomasi" %}
                 </p>
             </div>
 
@@ -129,9 +129,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Eng so'nggi zamonaviy uskunalar</h3>
+                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">{% trans "Eng so'nggi zamonaviy uskunalar" %}</h3>
                 <p class="text-gray-600 dark:text-gray-400">
-                    Yuqori aniqlikdagi o'lchov va sinov uskunalari, xorijiy analoglardan kam bo'lmagan sifat
+                    {% trans "Yuqori aniqlikdagi o'lchov va sinov uskunalari, xorijiy analoglardan kam bo'lmagan sifat" %}
                 </p>
             </div>
 
@@ -142,9 +142,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Sinovlarning aniqligi</h3>
+                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">{% trans "Sinovlarning aniqligi" %}</h3>
                 <p class="text-gray-600 dark:text-gray-400">
-                    So'nggi rusumdagi sinov uskunalari va malakali xodimlar tomonidan sinalgan maxsulotlarning natijalari aniqligi
+                    {% trans "So'nggi rusumdagi sinov uskunalari va malakali xodimlar tomonidan sinalgan maxsulotlarning natijalari aniqligi" %}
                 </p>
             </div>
 
@@ -155,9 +155,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">Malakali kadrlar</h3>
+                <h3 class="text-xl font-bold text-dark dark:text-white mb-3">{% trans "Malakali kadrlar" %}</h3>
                 <p class="text-gray-600 dark:text-gray-400">
-                    Sertifikatlashtirish va sinov sohasida tegishli tajriba va ish stajiga ega mutaxassislar jamoasi
+                    {% trans "Sertifikatlashtirish va sinov sohasida tegishli tajriba va ish stajiga ega mutaxassislar jamoasi" %}
                 </p>
             </div>
         </div>
@@ -172,17 +172,17 @@
 
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
         <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Savollaringiz bormi?
+            {% trans "Savollaringiz bormi?" %}
         </h2>
         <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Biz bilan bog'laning — mutaxassislarimiz barcha savollarga javob berishadi
+            {% trans "Biz bilan bog'laning — mutaxassislarimiz barcha savollarga javob berishadi" %}
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="{% url 'core:contact' %}" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-gray-100 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
-                Bog'lanish
+                {% trans "Bog'lanish" %}
             </a>
             <a href="tel:+998908853030" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-xl transition-all duration-300">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
